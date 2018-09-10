@@ -1,0 +1,12 @@
+name: Richness
+title: Richness
+username:
+account: ecologiacivan
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 157551
+bundleId: 1046785
+url: https://ecologiacivan.shinyapps.io/Richness/
+when: 1509041336.27367
+asMultiple: FALSE
+asStatic: FALSE

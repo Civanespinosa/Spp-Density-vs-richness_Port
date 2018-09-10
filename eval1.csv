@@ -1,0 +1,1045 @@
+Numero,pregunta
+4,"La densidad de especies es el número de especies por unidad de área, es una forma alternativa de llamar a la riqueza."
+6,La riqueza de especies y la densidad de especies son medidas distintas de la cantidad de especies.
+8,"El incremento del área muestreal no tiene ningún efecto sobre el cálculo de la riqueza, pero si sobre la densidad de especies."
+9,La probabilidad de encontrar más especies dentro de una comunidad está directamente relacionada con la cantidad de individuos que puedo encontrar en las muestras.
+10,La rarefacción es una forma de evaluar las diferencias en riqueza entre sitios y reducir los efectos de diferente tamaño de muestras y/o individuos.
+12,"Los cambios de la riqueza entre sitios pueden ser comparados directamente, solo es necesario asegurarnos de tener la misma cantidad de muestras, la cantidad de individuos no tienen un efecto sobre este cálculo."
+17,Si las curvas de acumulación de especies no alcanzan la asíntota puede utilizarse rarefacción para determinar la riqueza de especies de una o varias comunidades.
+20,"La rarefacción implica construir una curva de acumulación de especies mediante un remuestreo al azar de los datos, y usando un tamaño de muestra menor al total de muestras totales."
+21,La rarefacción parte del supuesto de que todos los individuos tienen la misma probabilidad de ser capturados en el área de estudio.
+22,Las curvas de rarefacción pueden construirse en base a dos variables; número de muestras o número de individuos.
+,
+5,La riqueza de especies se refiere a la cantidad de especies por unidad de área.
+8,"El incremento del área muestreal no tiene ningún efecto sobre el cálculo de la riqueza, pero si sobre la densidad de especies."
+9,La probabilidad de encontrar más especies dentro de una comunidad está directamente relacionada con la cantidad de individuos que puedo encontrar en las muestras.
+12,"Los cambios de la riqueza entre sitios pueden ser comparados directamente, solo es necesario asegurarnos de tener la misma cantidad de muestras, la cantidad de individuos no tienen un efecto sobre este cálculo."
+16,Si las curvas de acumulación de especies no alcanzan la asíntota quiere decir que se podría esperar aún más diversidad de la encontrada en el sitio.
+17,Si las curvas de acumulación de especies no alcanzan la asíntota puede utilizarse rarefacción para determinar la riqueza de especies de una o varias comunidades.
+18,"Cuando se utilizan curvas de acumulación se espera que, conforme se incrementa el esfuerzo de muestreo, se va haciendo cada vez menos frecuente registrar la presencia de una especie nueva, por lo que la pendiente de la curva decrece."
+19,La rarefacción calcula el número de especies esperadas en el caso de que todas las muestras tuviesen el mismo número de individuos capturados.
+20,"La rarefacción implica construir una curva de acumulación de especies mediante un remuestreo al azar de los datos, y usando un tamaño de muestra menor al total de muestras totales."
+22,Las curvas de rarefacción pueden construirse en base a dos variables; número de muestras o número de individuos.
+,
+2,Cuando proyectamos la posible cantidad de especies en un determinado lugar estamos hablando de riqueza observada de especies.
+3,La riqueza esperada de especies en un determinado sitio puede ser calculada como un índice.
+4,"La densidad de especies es el número de especies por unidad de área, es una forma alternativa de llamar a la riqueza."
+5,La riqueza de especies se refiere a la cantidad de especies por unidad de área.
+7,Cuando tengo un incremento en el área muestreal es esperable que la cantidad de especies se incremente.
+8,"El incremento del área muestreal no tiene ningún efecto sobre el cálculo de la riqueza, pero si sobre la densidad de especies."
+11,La rarefacción nos permite reducir el efecto de la densidad de especies sobre el establecimiento de la riqueza observada en un determinado sitio.
+16,Si las curvas de acumulación de especies no alcanzan la asíntota quiere decir que se podría esperar aún más diversidad de la encontrada en el sitio.
+17,Si las curvas de acumulación de especies no alcanzan la asíntota puede utilizarse rarefacción para determinar la riqueza de especies de una o varias comunidades.
+21,La rarefacción parte del supuesto de que todos los individuos tienen la misma probabilidad de ser capturados en el área de estudio.
+,
+2,Cuando proyectamos la posible cantidad de especies en un determinado lugar estamos hablando de riqueza observada de especies.
+4,"La densidad de especies es el número de especies por unidad de área, es una forma alternativa de llamar a la riqueza."
+7,Cuando tengo un incremento en el área muestreal es esperable que la cantidad de especies se incremente.
+8,"El incremento del área muestreal no tiene ningún efecto sobre el cálculo de la riqueza, pero si sobre la densidad de especies."
+9,La probabilidad de encontrar más especies dentro de una comunidad está directamente relacionada con la cantidad de individuos que puedo encontrar en las muestras.
+11,La rarefacción nos permite reducir el efecto de la densidad de especies sobre el establecimiento de la riqueza observada en un determinado sitio.
+12,"Los cambios de la riqueza entre sitios pueden ser comparados directamente, solo es necesario asegurarnos de tener la misma cantidad de muestras, la cantidad de individuos no tienen un efecto sobre este cálculo."
+13,Las curvas de acumulación muestran el número de especies acumuladas conforme se va aumentando el esfuerzo de muestreo en un sitio.
+20,"La rarefacción implica construir una curva de acumulación de especies mediante un remuestreo al azar de los datos, y usando un tamaño de muestra menor al total de muestras totales."
+21,La rarefacción parte del supuesto de que todos los individuos tienen la misma probabilidad de ser capturados en el área de estudio.
+,
+2,Cuando proyectamos la posible cantidad de especies en un determinado lugar estamos hablando de riqueza observada de especies.
+3,La riqueza esperada de especies en un determinado sitio puede ser calculada como un índice.
+6,La riqueza de especies y la densidad de especies son medidas distintas de la cantidad de especies.
+8,"El incremento del área muestreal no tiene ningún efecto sobre el cálculo de la riqueza, pero si sobre la densidad de especies."
+10,La rarefacción es una forma de evaluar las diferencias en riqueza entre sitios y reducir los efectos de diferente tamaño de muestras y/o individuos.
+11,La rarefacción nos permite reducir el efecto de la densidad de especies sobre el establecimiento de la riqueza observada en un determinado sitio.
+12,"Los cambios de la riqueza entre sitios pueden ser comparados directamente, solo es necesario asegurarnos de tener la misma cantidad de muestras, la cantidad de individuos no tienen un efecto sobre este cálculo."
+13,Las curvas de acumulación muestran el número de especies acumuladas conforme se va aumentando el esfuerzo de muestreo en un sitio.
+15,"Si dos localidades con la misma riqueza de especies difieren en sus abundancias o en la facilidad con que pueden encontrarse los individuos, un mismo esfuerzo de muestreo podrá resultar en valores distintos de riqueza observada."
+18,"Cuando se utilizan curvas de acumulación se espera que, conforme se incrementa el esfuerzo de muestreo, se va haciendo cada vez menos frecuente registrar la presencia de una especie nueva, por lo que la pendiente de la curva decrece."
+,
+1,Riqueza de la comunidad se refiere a la cantidad de especies que existen en un determinado lugar.
+2,Cuando proyectamos la posible cantidad de especies en un determinado lugar estamos hablando de riqueza observada de especies.
+3,La riqueza esperada de especies en un determinado sitio puede ser calculada como un índice.
+4,"La densidad de especies es el número de especies por unidad de área, es una forma alternativa de llamar a la riqueza."
+7,Cuando tengo un incremento en el área muestreal es esperable que la cantidad de especies se incremente.
+8,"El incremento del área muestreal no tiene ningún efecto sobre el cálculo de la riqueza, pero si sobre la densidad de especies."
+10,La rarefacción es una forma de evaluar las diferencias en riqueza entre sitios y reducir los efectos de diferente tamaño de muestras y/o individuos.
+11,La rarefacción nos permite reducir el efecto de la densidad de especies sobre el establecimiento de la riqueza observada en un determinado sitio.
+13,Las curvas de acumulación muestran el número de especies acumuladas conforme se va aumentando el esfuerzo de muestreo en un sitio.
+22,Las curvas de rarefacción pueden construirse en base a dos variables; número de muestras o número de individuos.
+,
+1,Riqueza de la comunidad se refiere a la cantidad de especies que existen en un determinado lugar.
+3,La riqueza esperada de especies en un determinado sitio puede ser calculada como un índice.
+5,La riqueza de especies se refiere a la cantidad de especies por unidad de área.
+8,"El incremento del área muestreal no tiene ningún efecto sobre el cálculo de la riqueza, pero si sobre la densidad de especies."
+10,La rarefacción es una forma de evaluar las diferencias en riqueza entre sitios y reducir los efectos de diferente tamaño de muestras y/o individuos.
+13,Las curvas de acumulación muestran el número de especies acumuladas conforme se va aumentando el esfuerzo de muestreo en un sitio.
+16,Si las curvas de acumulación de especies no alcanzan la asíntota quiere decir que se podría esperar aún más diversidad de la encontrada en el sitio.
+18,"Cuando se utilizan curvas de acumulación se espera que, conforme se incrementa el esfuerzo de muestreo, se va haciendo cada vez menos frecuente registrar la presencia de una especie nueva, por lo que la pendiente de la curva decrece."
+20,"La rarefacción implica construir una curva de acumulación de especies mediante un remuestreo al azar de los datos, y usando un tamaño de muestra menor al total de muestras totales."
+22,Las curvas de rarefacción pueden construirse en base a dos variables; número de muestras o número de individuos.
+,
+6,La riqueza de especies y la densidad de especies son medidas distintas de la cantidad de especies.
+7,Cuando tengo un incremento en el área muestreal es esperable que la cantidad de especies se incremente.
+8,"El incremento del área muestreal no tiene ningún efecto sobre el cálculo de la riqueza, pero si sobre la densidad de especies."
+9,La probabilidad de encontrar más especies dentro de una comunidad está directamente relacionada con la cantidad de individuos que puedo encontrar en las muestras.
+10,La rarefacción es una forma de evaluar las diferencias en riqueza entre sitios y reducir los efectos de diferente tamaño de muestras y/o individuos.
+11,La rarefacción nos permite reducir el efecto de la densidad de especies sobre el establecimiento de la riqueza observada en un determinado sitio.
+16,Si las curvas de acumulación de especies no alcanzan la asíntota quiere decir que se podría esperar aún más diversidad de la encontrada en el sitio.
+18,"Cuando se utilizan curvas de acumulación se espera que, conforme se incrementa el esfuerzo de muestreo, se va haciendo cada vez menos frecuente registrar la presencia de una especie nueva, por lo que la pendiente de la curva decrece."
+20,"La rarefacción implica construir una curva de acumulación de especies mediante un remuestreo al azar de los datos, y usando un tamaño de muestra menor al total de muestras totales."
+22,Las curvas de rarefacción pueden construirse en base a dos variables; número de muestras o número de individuos.
+,
+3,La riqueza esperada de especies en un determinado sitio puede ser calculada como un índice.
+4,"La densidad de especies es el número de especies por unidad de área, es una forma alternativa de llamar a la riqueza."
+5,La riqueza de especies se refiere a la cantidad de especies por unidad de área.
+13,Las curvas de acumulación muestran el número de especies acumuladas conforme se va aumentando el esfuerzo de muestreo en un sitio.
+14,"Cuando decimos que la curva de acumulación ha alcanzada la asíntota, queremos decir que la riqueza de especies se ha saturado, es decir, se ha alcanzado la riqueza máxima de especies."
+15,"Si dos localidades con la misma riqueza de especies difieren en sus abundancias o en la facilidad con que pueden encontrarse los individuos, un mismo esfuerzo de muestreo podrá resultar en valores distintos de riqueza observada."
+16,Si las curvas de acumulación de especies no alcanzan la asíntota quiere decir que se podría esperar aún más diversidad de la encontrada en el sitio.
+17,Si las curvas de acumulación de especies no alcanzan la asíntota puede utilizarse rarefacción para determinar la riqueza de especies de una o varias comunidades.
+18,"Cuando se utilizan curvas de acumulación se espera que, conforme se incrementa el esfuerzo de muestreo, se va haciendo cada vez menos frecuente registrar la presencia de una especie nueva, por lo que la pendiente de la curva decrece."
+20,"La rarefacción implica construir una curva de acumulación de especies mediante un remuestreo al azar de los datos, y usando un tamaño de muestra menor al total de muestras totales."
+,
+3,La riqueza esperada de especies en un determinado sitio puede ser calculada como un índice.
+4,"La densidad de especies es el número de especies por unidad de área, es una forma alternativa de llamar a la riqueza."
+6,La riqueza de especies y la densidad de especies son medidas distintas de la cantidad de especies.
+10,La rarefacción es una forma de evaluar las diferencias en riqueza entre sitios y reducir los efectos de diferente tamaño de muestras y/o individuos.
+15,"Si dos localidades con la misma riqueza de especies difieren en sus abundancias o en la facilidad con que pueden encontrarse los individuos, un mismo esfuerzo de muestreo podrá resultar en valores distintos de riqueza observada."
+16,Si las curvas de acumulación de especies no alcanzan la asíntota quiere decir que se podría esperar aún más diversidad de la encontrada en el sitio.
+17,Si las curvas de acumulación de especies no alcanzan la asíntota puede utilizarse rarefacción para determinar la riqueza de especies de una o varias comunidades.
+18,"Cuando se utilizan curvas de acumulación se espera que, conforme se incrementa el esfuerzo de muestreo, se va haciendo cada vez menos frecuente registrar la presencia de una especie nueva, por lo que la pendiente de la curva decrece."
+19,La rarefacción calcula el número de especies esperadas en el caso de que todas las muestras tuviesen el mismo número de individuos capturados.
+20,"La rarefacción implica construir una curva de acumulación de especies mediante un remuestreo al azar de los datos, y usando un tamaño de muestra menor al total de muestras totales."
+,
+2,Cuando proyectamos la posible cantidad de especies en un determinado lugar estamos hablando de riqueza observada de especies.
+3,La riqueza esperada de especies en un determinado sitio puede ser calculada como un índice.
+7,Cuando tengo un incremento en el área muestreal es esperable que la cantidad de especies se incremente.
+8,"El incremento del área muestreal no tiene ningún efecto sobre el cálculo de la riqueza, pero si sobre la densidad de especies."
+9,La probabilidad de encontrar más especies dentro de una comunidad está directamente relacionada con la cantidad de individuos que puedo encontrar en las muestras.
+11,La rarefacción nos permite reducir el efecto de la densidad de especies sobre el establecimiento de la riqueza observada en un determinado sitio.
+14,"Cuando decimos que la curva de acumulación ha alcanzada la asíntota, queremos decir que la riqueza de especies se ha saturado, es decir, se ha alcanzado la riqueza máxima de especies."
+18,"Cuando se utilizan curvas de acumulación se espera que, conforme se incrementa el esfuerzo de muestreo, se va haciendo cada vez menos frecuente registrar la presencia de una especie nueva, por lo que la pendiente de la curva decrece."
+21,La rarefacción parte del supuesto de que todos los individuos tienen la misma probabilidad de ser capturados en el área de estudio.
+22,Las curvas de rarefacción pueden construirse en base a dos variables; número de muestras o número de individuos.
+,
+1,Riqueza de la comunidad se refiere a la cantidad de especies que existen en un determinado lugar.
+2,Cuando proyectamos la posible cantidad de especies en un determinado lugar estamos hablando de riqueza observada de especies.
+4,"La densidad de especies es el número de especies por unidad de área, es una forma alternativa de llamar a la riqueza."
+9,La probabilidad de encontrar más especies dentro de una comunidad está directamente relacionada con la cantidad de individuos que puedo encontrar en las muestras.
+11,La rarefacción nos permite reducir el efecto de la densidad de especies sobre el establecimiento de la riqueza observada en un determinado sitio.
+13,Las curvas de acumulación muestran el número de especies acumuladas conforme se va aumentando el esfuerzo de muestreo en un sitio.
+14,"Cuando decimos que la curva de acumulación ha alcanzada la asíntota, queremos decir que la riqueza de especies se ha saturado, es decir, se ha alcanzado la riqueza máxima de especies."
+15,"Si dos localidades con la misma riqueza de especies difieren en sus abundancias o en la facilidad con que pueden encontrarse los individuos, un mismo esfuerzo de muestreo podrá resultar en valores distintos de riqueza observada."
+21,La rarefacción parte del supuesto de que todos los individuos tienen la misma probabilidad de ser capturados en el área de estudio.
+22,Las curvas de rarefacción pueden construirse en base a dos variables; número de muestras o número de individuos.
+,
+5,La riqueza de especies se refiere a la cantidad de especies por unidad de área.
+6,La riqueza de especies y la densidad de especies son medidas distintas de la cantidad de especies.
+7,Cuando tengo un incremento en el área muestreal es esperable que la cantidad de especies se incremente.
+8,"El incremento del área muestreal no tiene ningún efecto sobre el cálculo de la riqueza, pero si sobre la densidad de especies."
+13,Las curvas de acumulación muestran el número de especies acumuladas conforme se va aumentando el esfuerzo de muestreo en un sitio.
+15,"Si dos localidades con la misma riqueza de especies difieren en sus abundancias o en la facilidad con que pueden encontrarse los individuos, un mismo esfuerzo de muestreo podrá resultar en valores distintos de riqueza observada."
+16,Si las curvas de acumulación de especies no alcanzan la asíntota quiere decir que se podría esperar aún más diversidad de la encontrada en el sitio.
+18,"Cuando se utilizan curvas de acumulación se espera que, conforme se incrementa el esfuerzo de muestreo, se va haciendo cada vez menos frecuente registrar la presencia de una especie nueva, por lo que la pendiente de la curva decrece."
+20,"La rarefacción implica construir una curva de acumulación de especies mediante un remuestreo al azar de los datos, y usando un tamaño de muestra menor al total de muestras totales."
+22,Las curvas de rarefacción pueden construirse en base a dos variables; número de muestras o número de individuos.
+,
+1,Riqueza de la comunidad se refiere a la cantidad de especies que existen en un determinado lugar.
+7,Cuando tengo un incremento en el área muestreal es esperable que la cantidad de especies se incremente.
+8,"El incremento del área muestreal no tiene ningún efecto sobre el cálculo de la riqueza, pero si sobre la densidad de especies."
+9,La probabilidad de encontrar más especies dentro de una comunidad está directamente relacionada con la cantidad de individuos que puedo encontrar en las muestras.
+11,La rarefacción nos permite reducir el efecto de la densidad de especies sobre el establecimiento de la riqueza observada en un determinado sitio.
+15,"Si dos localidades con la misma riqueza de especies difieren en sus abundancias o en la facilidad con que pueden encontrarse los individuos, un mismo esfuerzo de muestreo podrá resultar en valores distintos de riqueza observada."
+16,Si las curvas de acumulación de especies no alcanzan la asíntota quiere decir que se podría esperar aún más diversidad de la encontrada en el sitio.
+17,Si las curvas de acumulación de especies no alcanzan la asíntota puede utilizarse rarefacción para determinar la riqueza de especies de una o varias comunidades.
+18,"Cuando se utilizan curvas de acumulación se espera que, conforme se incrementa el esfuerzo de muestreo, se va haciendo cada vez menos frecuente registrar la presencia de una especie nueva, por lo que la pendiente de la curva decrece."
+19,La rarefacción calcula el número de especies esperadas en el caso de que todas las muestras tuviesen el mismo número de individuos capturados.
+,
+4,"La densidad de especies es el número de especies por unidad de área, es una forma alternativa de llamar a la riqueza."
+5,La riqueza de especies se refiere a la cantidad de especies por unidad de área.
+9,La probabilidad de encontrar más especies dentro de una comunidad está directamente relacionada con la cantidad de individuos que puedo encontrar en las muestras.
+10,La rarefacción es una forma de evaluar las diferencias en riqueza entre sitios y reducir los efectos de diferente tamaño de muestras y/o individuos.
+11,La rarefacción nos permite reducir el efecto de la densidad de especies sobre el establecimiento de la riqueza observada en un determinado sitio.
+13,Las curvas de acumulación muestran el número de especies acumuladas conforme se va aumentando el esfuerzo de muestreo en un sitio.
+15,"Si dos localidades con la misma riqueza de especies difieren en sus abundancias o en la facilidad con que pueden encontrarse los individuos, un mismo esfuerzo de muestreo podrá resultar en valores distintos de riqueza observada."
+17,Si las curvas de acumulación de especies no alcanzan la asíntota puede utilizarse rarefacción para determinar la riqueza de especies de una o varias comunidades.
+18,"Cuando se utilizan curvas de acumulación se espera que, conforme se incrementa el esfuerzo de muestreo, se va haciendo cada vez menos frecuente registrar la presencia de una especie nueva, por lo que la pendiente de la curva decrece."
+19,La rarefacción calcula el número de especies esperadas en el caso de que todas las muestras tuviesen el mismo número de individuos capturados.
+,
+1,Riqueza de la comunidad se refiere a la cantidad de especies que existen en un determinado lugar.
+3,La riqueza esperada de especies en un determinado sitio puede ser calculada como un índice.
+4,"La densidad de especies es el número de especies por unidad de área, es una forma alternativa de llamar a la riqueza."
+6,La riqueza de especies y la densidad de especies son medidas distintas de la cantidad de especies.
+8,"El incremento del área muestreal no tiene ningún efecto sobre el cálculo de la riqueza, pero si sobre la densidad de especies."
+9,La probabilidad de encontrar más especies dentro de una comunidad está directamente relacionada con la cantidad de individuos que puedo encontrar en las muestras.
+10,La rarefacción es una forma de evaluar las diferencias en riqueza entre sitios y reducir los efectos de diferente tamaño de muestras y/o individuos.
+17,Si las curvas de acumulación de especies no alcanzan la asíntota puede utilizarse rarefacción para determinar la riqueza de especies de una o varias comunidades.
+18,"Cuando se utilizan curvas de acumulación se espera que, conforme se incrementa el esfuerzo de muestreo, se va haciendo cada vez menos frecuente registrar la presencia de una especie nueva, por lo que la pendiente de la curva decrece."
+21,La rarefacción parte del supuesto de que todos los individuos tienen la misma probabilidad de ser capturados en el área de estudio.
+,
+2,Cuando proyectamos la posible cantidad de especies en un determinado lugar estamos hablando de riqueza observada de especies.
+4,"La densidad de especies es el número de especies por unidad de área, es una forma alternativa de llamar a la riqueza."
+6,La riqueza de especies y la densidad de especies son medidas distintas de la cantidad de especies.
+8,"El incremento del área muestreal no tiene ningún efecto sobre el cálculo de la riqueza, pero si sobre la densidad de especies."
+9,La probabilidad de encontrar más especies dentro de una comunidad está directamente relacionada con la cantidad de individuos que puedo encontrar en las muestras.
+13,Las curvas de acumulación muestran el número de especies acumuladas conforme se va aumentando el esfuerzo de muestreo en un sitio.
+14,"Cuando decimos que la curva de acumulación ha alcanzada la asíntota, queremos decir que la riqueza de especies se ha saturado, es decir, se ha alcanzado la riqueza máxima de especies."
+17,Si las curvas de acumulación de especies no alcanzan la asíntota puede utilizarse rarefacción para determinar la riqueza de especies de una o varias comunidades.
+20,"La rarefacción implica construir una curva de acumulación de especies mediante un remuestreo al azar de los datos, y usando un tamaño de muestra menor al total de muestras totales."
+21,La rarefacción parte del supuesto de que todos los individuos tienen la misma probabilidad de ser capturados en el área de estudio.
+,
+1,Riqueza de la comunidad se refiere a la cantidad de especies que existen en un determinado lugar.
+3,La riqueza esperada de especies en un determinado sitio puede ser calculada como un índice.
+4,"La densidad de especies es el número de especies por unidad de área, es una forma alternativa de llamar a la riqueza."
+12,"Los cambios de la riqueza entre sitios pueden ser comparados directamente, solo es necesario asegurarnos de tener la misma cantidad de muestras, la cantidad de individuos no tienen un efecto sobre este cálculo."
+14,"Cuando decimos que la curva de acumulación ha alcanzada la asíntota, queremos decir que la riqueza de especies se ha saturado, es decir, se ha alcanzado la riqueza máxima de especies."
+16,Si las curvas de acumulación de especies no alcanzan la asíntota quiere decir que se podría esperar aún más diversidad de la encontrada en el sitio.
+17,Si las curvas de acumulación de especies no alcanzan la asíntota puede utilizarse rarefacción para determinar la riqueza de especies de una o varias comunidades.
+19,La rarefacción calcula el número de especies esperadas en el caso de que todas las muestras tuviesen el mismo número de individuos capturados.
+20,"La rarefacción implica construir una curva de acumulación de especies mediante un remuestreo al azar de los datos, y usando un tamaño de muestra menor al total de muestras totales."
+21,La rarefacción parte del supuesto de que todos los individuos tienen la misma probabilidad de ser capturados en el área de estudio.
+,
+2,Cuando proyectamos la posible cantidad de especies en un determinado lugar estamos hablando de riqueza observada de especies.
+5,La riqueza de especies se refiere a la cantidad de especies por unidad de área.
+6,La riqueza de especies y la densidad de especies son medidas distintas de la cantidad de especies.
+10,La rarefacción es una forma de evaluar las diferencias en riqueza entre sitios y reducir los efectos de diferente tamaño de muestras y/o individuos.
+13,Las curvas de acumulación muestran el número de especies acumuladas conforme se va aumentando el esfuerzo de muestreo en un sitio.
+14,"Cuando decimos que la curva de acumulación ha alcanzada la asíntota, queremos decir que la riqueza de especies se ha saturado, es decir, se ha alcanzado la riqueza máxima de especies."
+16,Si las curvas de acumulación de especies no alcanzan la asíntota quiere decir que se podría esperar aún más diversidad de la encontrada en el sitio.
+17,Si las curvas de acumulación de especies no alcanzan la asíntota puede utilizarse rarefacción para determinar la riqueza de especies de una o varias comunidades.
+18,"Cuando se utilizan curvas de acumulación se espera que, conforme se incrementa el esfuerzo de muestreo, se va haciendo cada vez menos frecuente registrar la presencia de una especie nueva, por lo que la pendiente de la curva decrece."
+22,Las curvas de rarefacción pueden construirse en base a dos variables; número de muestras o número de individuos.
+,
+3,La riqueza esperada de especies en un determinado sitio puede ser calculada como un índice.
+4,"La densidad de especies es el número de especies por unidad de área, es una forma alternativa de llamar a la riqueza."
+5,La riqueza de especies se refiere a la cantidad de especies por unidad de área.
+6,La riqueza de especies y la densidad de especies son medidas distintas de la cantidad de especies.
+7,Cuando tengo un incremento en el área muestreal es esperable que la cantidad de especies se incremente.
+8,"El incremento del área muestreal no tiene ningún efecto sobre el cálculo de la riqueza, pero si sobre la densidad de especies."
+10,La rarefacción es una forma de evaluar las diferencias en riqueza entre sitios y reducir los efectos de diferente tamaño de muestras y/o individuos.
+15,"Si dos localidades con la misma riqueza de especies difieren en sus abundancias o en la facilidad con que pueden encontrarse los individuos, un mismo esfuerzo de muestreo podrá resultar en valores distintos de riqueza observada."
+16,Si las curvas de acumulación de especies no alcanzan la asíntota quiere decir que se podría esperar aún más diversidad de la encontrada en el sitio.
+17,Si las curvas de acumulación de especies no alcanzan la asíntota puede utilizarse rarefacción para determinar la riqueza de especies de una o varias comunidades.
+,
+3,La riqueza esperada de especies en un determinado sitio puede ser calculada como un índice.
+7,Cuando tengo un incremento en el área muestreal es esperable que la cantidad de especies se incremente.
+8,"El incremento del área muestreal no tiene ningún efecto sobre el cálculo de la riqueza, pero si sobre la densidad de especies."
+9,La probabilidad de encontrar más especies dentro de una comunidad está directamente relacionada con la cantidad de individuos que puedo encontrar en las muestras.
+11,La rarefacción nos permite reducir el efecto de la densidad de especies sobre el establecimiento de la riqueza observada en un determinado sitio.
+12,"Los cambios de la riqueza entre sitios pueden ser comparados directamente, solo es necesario asegurarnos de tener la misma cantidad de muestras, la cantidad de individuos no tienen un efecto sobre este cálculo."
+14,"Cuando decimos que la curva de acumulación ha alcanzada la asíntota, queremos decir que la riqueza de especies se ha saturado, es decir, se ha alcanzado la riqueza máxima de especies."
+15,"Si dos localidades con la misma riqueza de especies difieren en sus abundancias o en la facilidad con que pueden encontrarse los individuos, un mismo esfuerzo de muestreo podrá resultar en valores distintos de riqueza observada."
+19,La rarefacción calcula el número de especies esperadas en el caso de que todas las muestras tuviesen el mismo número de individuos capturados.
+20,"La rarefacción implica construir una curva de acumulación de especies mediante un remuestreo al azar de los datos, y usando un tamaño de muestra menor al total de muestras totales."
+,
+1,Riqueza de la comunidad se refiere a la cantidad de especies que existen en un determinado lugar.
+5,La riqueza de especies se refiere a la cantidad de especies por unidad de área.
+6,La riqueza de especies y la densidad de especies son medidas distintas de la cantidad de especies.
+10,La rarefacción es una forma de evaluar las diferencias en riqueza entre sitios y reducir los efectos de diferente tamaño de muestras y/o individuos.
+11,La rarefacción nos permite reducir el efecto de la densidad de especies sobre el establecimiento de la riqueza observada en un determinado sitio.
+13,Las curvas de acumulación muestran el número de especies acumuladas conforme se va aumentando el esfuerzo de muestreo en un sitio.
+17,Si las curvas de acumulación de especies no alcanzan la asíntota puede utilizarse rarefacción para determinar la riqueza de especies de una o varias comunidades.
+18,"Cuando se utilizan curvas de acumulación se espera que, conforme se incrementa el esfuerzo de muestreo, se va haciendo cada vez menos frecuente registrar la presencia de una especie nueva, por lo que la pendiente de la curva decrece."
+19,La rarefacción calcula el número de especies esperadas en el caso de que todas las muestras tuviesen el mismo número de individuos capturados.
+21,La rarefacción parte del supuesto de que todos los individuos tienen la misma probabilidad de ser capturados en el área de estudio.
+,
+3,La riqueza esperada de especies en un determinado sitio puede ser calculada como un índice.
+5,La riqueza de especies se refiere a la cantidad de especies por unidad de área.
+6,La riqueza de especies y la densidad de especies son medidas distintas de la cantidad de especies.
+7,Cuando tengo un incremento en el área muestreal es esperable que la cantidad de especies se incremente.
+10,La rarefacción es una forma de evaluar las diferencias en riqueza entre sitios y reducir los efectos de diferente tamaño de muestras y/o individuos.
+14,"Cuando decimos que la curva de acumulación ha alcanzada la asíntota, queremos decir que la riqueza de especies se ha saturado, es decir, se ha alcanzado la riqueza máxima de especies."
+16,Si las curvas de acumulación de especies no alcanzan la asíntota quiere decir que se podría esperar aún más diversidad de la encontrada en el sitio.
+17,Si las curvas de acumulación de especies no alcanzan la asíntota puede utilizarse rarefacción para determinar la riqueza de especies de una o varias comunidades.
+19,La rarefacción calcula el número de especies esperadas en el caso de que todas las muestras tuviesen el mismo número de individuos capturados.
+21,La rarefacción parte del supuesto de que todos los individuos tienen la misma probabilidad de ser capturados en el área de estudio.
+,
+1,Riqueza de la comunidad se refiere a la cantidad de especies que existen en un determinado lugar.
+2,Cuando proyectamos la posible cantidad de especies en un determinado lugar estamos hablando de riqueza observada de especies.
+13,Las curvas de acumulación muestran el número de especies acumuladas conforme se va aumentando el esfuerzo de muestreo en un sitio.
+14,"Cuando decimos que la curva de acumulación ha alcanzada la asíntota, queremos decir que la riqueza de especies se ha saturado, es decir, se ha alcanzado la riqueza máxima de especies."
+15,"Si dos localidades con la misma riqueza de especies difieren en sus abundancias o en la facilidad con que pueden encontrarse los individuos, un mismo esfuerzo de muestreo podrá resultar en valores distintos de riqueza observada."
+16,Si las curvas de acumulación de especies no alcanzan la asíntota quiere decir que se podría esperar aún más diversidad de la encontrada en el sitio.
+18,"Cuando se utilizan curvas de acumulación se espera que, conforme se incrementa el esfuerzo de muestreo, se va haciendo cada vez menos frecuente registrar la presencia de una especie nueva, por lo que la pendiente de la curva decrece."
+19,La rarefacción calcula el número de especies esperadas en el caso de que todas las muestras tuviesen el mismo número de individuos capturados.
+20,"La rarefacción implica construir una curva de acumulación de especies mediante un remuestreo al azar de los datos, y usando un tamaño de muestra menor al total de muestras totales."
+22,Las curvas de rarefacción pueden construirse en base a dos variables; número de muestras o número de individuos.
+,
+2,Cuando proyectamos la posible cantidad de especies en un determinado lugar estamos hablando de riqueza observada de especies.
+3,La riqueza esperada de especies en un determinado sitio puede ser calculada como un índice.
+4,"La densidad de especies es el número de especies por unidad de área, es una forma alternativa de llamar a la riqueza."
+6,La riqueza de especies y la densidad de especies son medidas distintas de la cantidad de especies.
+11,La rarefacción nos permite reducir el efecto de la densidad de especies sobre el establecimiento de la riqueza observada en un determinado sitio.
+12,"Los cambios de la riqueza entre sitios pueden ser comparados directamente, solo es necesario asegurarnos de tener la misma cantidad de muestras, la cantidad de individuos no tienen un efecto sobre este cálculo."
+13,Las curvas de acumulación muestran el número de especies acumuladas conforme se va aumentando el esfuerzo de muestreo en un sitio.
+16,Si las curvas de acumulación de especies no alcanzan la asíntota quiere decir que se podría esperar aún más diversidad de la encontrada en el sitio.
+18,"Cuando se utilizan curvas de acumulación se espera que, conforme se incrementa el esfuerzo de muestreo, se va haciendo cada vez menos frecuente registrar la presencia de una especie nueva, por lo que la pendiente de la curva decrece."
+19,La rarefacción calcula el número de especies esperadas en el caso de que todas las muestras tuviesen el mismo número de individuos capturados.
+,
+2,Cuando proyectamos la posible cantidad de especies en un determinado lugar estamos hablando de riqueza observada de especies.
+3,La riqueza esperada de especies en un determinado sitio puede ser calculada como un índice.
+5,La riqueza de especies se refiere a la cantidad de especies por unidad de área.
+6,La riqueza de especies y la densidad de especies son medidas distintas de la cantidad de especies.
+8,"El incremento del área muestreal no tiene ningún efecto sobre el cálculo de la riqueza, pero si sobre la densidad de especies."
+9,La probabilidad de encontrar más especies dentro de una comunidad está directamente relacionada con la cantidad de individuos que puedo encontrar en las muestras.
+11,La rarefacción nos permite reducir el efecto de la densidad de especies sobre el establecimiento de la riqueza observada en un determinado sitio.
+13,Las curvas de acumulación muestran el número de especies acumuladas conforme se va aumentando el esfuerzo de muestreo en un sitio.
+15,"Si dos localidades con la misma riqueza de especies difieren en sus abundancias o en la facilidad con que pueden encontrarse los individuos, un mismo esfuerzo de muestreo podrá resultar en valores distintos de riqueza observada."
+21,La rarefacción parte del supuesto de que todos los individuos tienen la misma probabilidad de ser capturados en el área de estudio.
+,
+5,La riqueza de especies se refiere a la cantidad de especies por unidad de área.
+6,La riqueza de especies y la densidad de especies son medidas distintas de la cantidad de especies.
+7,Cuando tengo un incremento en el área muestreal es esperable que la cantidad de especies se incremente.
+8,"El incremento del área muestreal no tiene ningún efecto sobre el cálculo de la riqueza, pero si sobre la densidad de especies."
+11,La rarefacción nos permite reducir el efecto de la densidad de especies sobre el establecimiento de la riqueza observada en un determinado sitio.
+12,"Los cambios de la riqueza entre sitios pueden ser comparados directamente, solo es necesario asegurarnos de tener la misma cantidad de muestras, la cantidad de individuos no tienen un efecto sobre este cálculo."
+13,Las curvas de acumulación muestran el número de especies acumuladas conforme se va aumentando el esfuerzo de muestreo en un sitio.
+17,Si las curvas de acumulación de especies no alcanzan la asíntota puede utilizarse rarefacción para determinar la riqueza de especies de una o varias comunidades.
+18,"Cuando se utilizan curvas de acumulación se espera que, conforme se incrementa el esfuerzo de muestreo, se va haciendo cada vez menos frecuente registrar la presencia de una especie nueva, por lo que la pendiente de la curva decrece."
+19,La rarefacción calcula el número de especies esperadas en el caso de que todas las muestras tuviesen el mismo número de individuos capturados.
+,
+1,Riqueza de la comunidad se refiere a la cantidad de especies que existen en un determinado lugar.
+5,La riqueza de especies se refiere a la cantidad de especies por unidad de área.
+7,Cuando tengo un incremento en el área muestreal es esperable que la cantidad de especies se incremente.
+8,"El incremento del área muestreal no tiene ningún efecto sobre el cálculo de la riqueza, pero si sobre la densidad de especies."
+13,Las curvas de acumulación muestran el número de especies acumuladas conforme se va aumentando el esfuerzo de muestreo en un sitio.
+14,"Cuando decimos que la curva de acumulación ha alcanzada la asíntota, queremos decir que la riqueza de especies se ha saturado, es decir, se ha alcanzado la riqueza máxima de especies."
+15,"Si dos localidades con la misma riqueza de especies difieren en sus abundancias o en la facilidad con que pueden encontrarse los individuos, un mismo esfuerzo de muestreo podrá resultar en valores distintos de riqueza observada."
+17,Si las curvas de acumulación de especies no alcanzan la asíntota puede utilizarse rarefacción para determinar la riqueza de especies de una o varias comunidades.
+18,"Cuando se utilizan curvas de acumulación se espera que, conforme se incrementa el esfuerzo de muestreo, se va haciendo cada vez menos frecuente registrar la presencia de una especie nueva, por lo que la pendiente de la curva decrece."
+21,La rarefacción parte del supuesto de que todos los individuos tienen la misma probabilidad de ser capturados en el área de estudio.
+,
+4,"La densidad de especies es el número de especies por unidad de área, es una forma alternativa de llamar a la riqueza."
+5,La riqueza de especies se refiere a la cantidad de especies por unidad de área.
+9,La probabilidad de encontrar más especies dentro de una comunidad está directamente relacionada con la cantidad de individuos que puedo encontrar en las muestras.
+12,"Los cambios de la riqueza entre sitios pueden ser comparados directamente, solo es necesario asegurarnos de tener la misma cantidad de muestras, la cantidad de individuos no tienen un efecto sobre este cálculo."
+13,Las curvas de acumulación muestran el número de especies acumuladas conforme se va aumentando el esfuerzo de muestreo en un sitio.
+16,Si las curvas de acumulación de especies no alcanzan la asíntota quiere decir que se podría esperar aún más diversidad de la encontrada en el sitio.
+17,Si las curvas de acumulación de especies no alcanzan la asíntota puede utilizarse rarefacción para determinar la riqueza de especies de una o varias comunidades.
+18,"Cuando se utilizan curvas de acumulación se espera que, conforme se incrementa el esfuerzo de muestreo, se va haciendo cada vez menos frecuente registrar la presencia de una especie nueva, por lo que la pendiente de la curva decrece."
+21,La rarefacción parte del supuesto de que todos los individuos tienen la misma probabilidad de ser capturados en el área de estudio.
+22,Las curvas de rarefacción pueden construirse en base a dos variables; número de muestras o número de individuos.
+,
+5,La riqueza de especies se refiere a la cantidad de especies por unidad de área.
+6,La riqueza de especies y la densidad de especies son medidas distintas de la cantidad de especies.
+7,Cuando tengo un incremento en el área muestreal es esperable que la cantidad de especies se incremente.
+8,"El incremento del área muestreal no tiene ningún efecto sobre el cálculo de la riqueza, pero si sobre la densidad de especies."
+9,La probabilidad de encontrar más especies dentro de una comunidad está directamente relacionada con la cantidad de individuos que puedo encontrar en las muestras.
+12,"Los cambios de la riqueza entre sitios pueden ser comparados directamente, solo es necesario asegurarnos de tener la misma cantidad de muestras, la cantidad de individuos no tienen un efecto sobre este cálculo."
+13,Las curvas de acumulación muestran el número de especies acumuladas conforme se va aumentando el esfuerzo de muestreo en un sitio.
+17,Si las curvas de acumulación de especies no alcanzan la asíntota puede utilizarse rarefacción para determinar la riqueza de especies de una o varias comunidades.
+19,La rarefacción calcula el número de especies esperadas en el caso de que todas las muestras tuviesen el mismo número de individuos capturados.
+20,"La rarefacción implica construir una curva de acumulación de especies mediante un remuestreo al azar de los datos, y usando un tamaño de muestra menor al total de muestras totales."
+,
+1,Riqueza de la comunidad se refiere a la cantidad de especies que existen en un determinado lugar.
+8,"El incremento del área muestreal no tiene ningún efecto sobre el cálculo de la riqueza, pero si sobre la densidad de especies."
+9,La probabilidad de encontrar más especies dentro de una comunidad está directamente relacionada con la cantidad de individuos que puedo encontrar en las muestras.
+10,La rarefacción es una forma de evaluar las diferencias en riqueza entre sitios y reducir los efectos de diferente tamaño de muestras y/o individuos.
+11,La rarefacción nos permite reducir el efecto de la densidad de especies sobre el establecimiento de la riqueza observada en un determinado sitio.
+15,"Si dos localidades con la misma riqueza de especies difieren en sus abundancias o en la facilidad con que pueden encontrarse los individuos, un mismo esfuerzo de muestreo podrá resultar en valores distintos de riqueza observada."
+18,"Cuando se utilizan curvas de acumulación se espera que, conforme se incrementa el esfuerzo de muestreo, se va haciendo cada vez menos frecuente registrar la presencia de una especie nueva, por lo que la pendiente de la curva decrece."
+19,La rarefacción calcula el número de especies esperadas en el caso de que todas las muestras tuviesen el mismo número de individuos capturados.
+21,La rarefacción parte del supuesto de que todos los individuos tienen la misma probabilidad de ser capturados en el área de estudio.
+22,Las curvas de rarefacción pueden construirse en base a dos variables; número de muestras o número de individuos.
+,
+1,Riqueza de la comunidad se refiere a la cantidad de especies que existen en un determinado lugar.
+2,Cuando proyectamos la posible cantidad de especies en un determinado lugar estamos hablando de riqueza observada de especies.
+3,La riqueza esperada de especies en un determinado sitio puede ser calculada como un índice.
+4,"La densidad de especies es el número de especies por unidad de área, es una forma alternativa de llamar a la riqueza."
+9,La probabilidad de encontrar más especies dentro de una comunidad está directamente relacionada con la cantidad de individuos que puedo encontrar en las muestras.
+12,"Los cambios de la riqueza entre sitios pueden ser comparados directamente, solo es necesario asegurarnos de tener la misma cantidad de muestras, la cantidad de individuos no tienen un efecto sobre este cálculo."
+13,Las curvas de acumulación muestran el número de especies acumuladas conforme se va aumentando el esfuerzo de muestreo en un sitio.
+14,"Cuando decimos que la curva de acumulación ha alcanzada la asíntota, queremos decir que la riqueza de especies se ha saturado, es decir, se ha alcanzado la riqueza máxima de especies."
+17,Si las curvas de acumulación de especies no alcanzan la asíntota puede utilizarse rarefacción para determinar la riqueza de especies de una o varias comunidades.
+19,La rarefacción calcula el número de especies esperadas en el caso de que todas las muestras tuviesen el mismo número de individuos capturados.
+,
+3,La riqueza esperada de especies en un determinado sitio puede ser calculada como un índice.
+7,Cuando tengo un incremento en el área muestreal es esperable que la cantidad de especies se incremente.
+9,La probabilidad de encontrar más especies dentro de una comunidad está directamente relacionada con la cantidad de individuos que puedo encontrar en las muestras.
+10,La rarefacción es una forma de evaluar las diferencias en riqueza entre sitios y reducir los efectos de diferente tamaño de muestras y/o individuos.
+11,La rarefacción nos permite reducir el efecto de la densidad de especies sobre el establecimiento de la riqueza observada en un determinado sitio.
+13,Las curvas de acumulación muestran el número de especies acumuladas conforme se va aumentando el esfuerzo de muestreo en un sitio.
+15,"Si dos localidades con la misma riqueza de especies difieren en sus abundancias o en la facilidad con que pueden encontrarse los individuos, un mismo esfuerzo de muestreo podrá resultar en valores distintos de riqueza observada."
+16,Si las curvas de acumulación de especies no alcanzan la asíntota quiere decir que se podría esperar aún más diversidad de la encontrada en el sitio.
+18,"Cuando se utilizan curvas de acumulación se espera que, conforme se incrementa el esfuerzo de muestreo, se va haciendo cada vez menos frecuente registrar la presencia de una especie nueva, por lo que la pendiente de la curva decrece."
+19,La rarefacción calcula el número de especies esperadas en el caso de que todas las muestras tuviesen el mismo número de individuos capturados.
+,
+1,Riqueza de la comunidad se refiere a la cantidad de especies que existen en un determinado lugar.
+2,Cuando proyectamos la posible cantidad de especies en un determinado lugar estamos hablando de riqueza observada de especies.
+7,Cuando tengo un incremento en el área muestreal es esperable que la cantidad de especies se incremente.
+8,"El incremento del área muestreal no tiene ningún efecto sobre el cálculo de la riqueza, pero si sobre la densidad de especies."
+13,Las curvas de acumulación muestran el número de especies acumuladas conforme se va aumentando el esfuerzo de muestreo en un sitio.
+15,"Si dos localidades con la misma riqueza de especies difieren en sus abundancias o en la facilidad con que pueden encontrarse los individuos, un mismo esfuerzo de muestreo podrá resultar en valores distintos de riqueza observada."
+16,Si las curvas de acumulación de especies no alcanzan la asíntota quiere decir que se podría esperar aún más diversidad de la encontrada en el sitio.
+17,Si las curvas de acumulación de especies no alcanzan la asíntota puede utilizarse rarefacción para determinar la riqueza de especies de una o varias comunidades.
+19,La rarefacción calcula el número de especies esperadas en el caso de que todas las muestras tuviesen el mismo número de individuos capturados.
+22,Las curvas de rarefacción pueden construirse en base a dos variables; número de muestras o número de individuos.
+,
+3,La riqueza esperada de especies en un determinado sitio puede ser calculada como un índice.
+4,"La densidad de especies es el número de especies por unidad de área, es una forma alternativa de llamar a la riqueza."
+5,La riqueza de especies se refiere a la cantidad de especies por unidad de área.
+6,La riqueza de especies y la densidad de especies son medidas distintas de la cantidad de especies.
+8,"El incremento del área muestreal no tiene ningún efecto sobre el cálculo de la riqueza, pero si sobre la densidad de especies."
+9,La probabilidad de encontrar más especies dentro de una comunidad está directamente relacionada con la cantidad de individuos que puedo encontrar en las muestras.
+10,La rarefacción es una forma de evaluar las diferencias en riqueza entre sitios y reducir los efectos de diferente tamaño de muestras y/o individuos.
+11,La rarefacción nos permite reducir el efecto de la densidad de especies sobre el establecimiento de la riqueza observada en un determinado sitio.
+17,Si las curvas de acumulación de especies no alcanzan la asíntota puede utilizarse rarefacción para determinar la riqueza de especies de una o varias comunidades.
+22,Las curvas de rarefacción pueden construirse en base a dos variables; número de muestras o número de individuos.
+,
+1,Riqueza de la comunidad se refiere a la cantidad de especies que existen en un determinado lugar.
+2,Cuando proyectamos la posible cantidad de especies en un determinado lugar estamos hablando de riqueza observada de especies.
+4,"La densidad de especies es el número de especies por unidad de área, es una forma alternativa de llamar a la riqueza."
+11,La rarefacción nos permite reducir el efecto de la densidad de especies sobre el establecimiento de la riqueza observada en un determinado sitio.
+13,Las curvas de acumulación muestran el número de especies acumuladas conforme se va aumentando el esfuerzo de muestreo en un sitio.
+14,"Cuando decimos que la curva de acumulación ha alcanzada la asíntota, queremos decir que la riqueza de especies se ha saturado, es decir, se ha alcanzado la riqueza máxima de especies."
+16,Si las curvas de acumulación de especies no alcanzan la asíntota quiere decir que se podría esperar aún más diversidad de la encontrada en el sitio.
+17,Si las curvas de acumulación de especies no alcanzan la asíntota puede utilizarse rarefacción para determinar la riqueza de especies de una o varias comunidades.
+18,"Cuando se utilizan curvas de acumulación se espera que, conforme se incrementa el esfuerzo de muestreo, se va haciendo cada vez menos frecuente registrar la presencia de una especie nueva, por lo que la pendiente de la curva decrece."
+22,Las curvas de rarefacción pueden construirse en base a dos variables; número de muestras o número de individuos.
+,
+2,Cuando proyectamos la posible cantidad de especies en un determinado lugar estamos hablando de riqueza observada de especies.
+3,La riqueza esperada de especies en un determinado sitio puede ser calculada como un índice.
+6,La riqueza de especies y la densidad de especies son medidas distintas de la cantidad de especies.
+7,Cuando tengo un incremento en el área muestreal es esperable que la cantidad de especies se incremente.
+8,"El incremento del área muestreal no tiene ningún efecto sobre el cálculo de la riqueza, pero si sobre la densidad de especies."
+14,"Cuando decimos que la curva de acumulación ha alcanzada la asíntota, queremos decir que la riqueza de especies se ha saturado, es decir, se ha alcanzado la riqueza máxima de especies."
+18,"Cuando se utilizan curvas de acumulación se espera que, conforme se incrementa el esfuerzo de muestreo, se va haciendo cada vez menos frecuente registrar la presencia de una especie nueva, por lo que la pendiente de la curva decrece."
+19,La rarefacción calcula el número de especies esperadas en el caso de que todas las muestras tuviesen el mismo número de individuos capturados.
+20,"La rarefacción implica construir una curva de acumulación de especies mediante un remuestreo al azar de los datos, y usando un tamaño de muestra menor al total de muestras totales."
+22,Las curvas de rarefacción pueden construirse en base a dos variables; número de muestras o número de individuos.
+,
+5,La riqueza de especies se refiere a la cantidad de especies por unidad de área.
+6,La riqueza de especies y la densidad de especies son medidas distintas de la cantidad de especies.
+11,La rarefacción nos permite reducir el efecto de la densidad de especies sobre el establecimiento de la riqueza observada en un determinado sitio.
+13,Las curvas de acumulación muestran el número de especies acumuladas conforme se va aumentando el esfuerzo de muestreo en un sitio.
+14,"Cuando decimos que la curva de acumulación ha alcanzada la asíntota, queremos decir que la riqueza de especies se ha saturado, es decir, se ha alcanzado la riqueza máxima de especies."
+16,Si las curvas de acumulación de especies no alcanzan la asíntota quiere decir que se podría esperar aún más diversidad de la encontrada en el sitio.
+17,Si las curvas de acumulación de especies no alcanzan la asíntota puede utilizarse rarefacción para determinar la riqueza de especies de una o varias comunidades.
+19,La rarefacción calcula el número de especies esperadas en el caso de que todas las muestras tuviesen el mismo número de individuos capturados.
+20,"La rarefacción implica construir una curva de acumulación de especies mediante un remuestreo al azar de los datos, y usando un tamaño de muestra menor al total de muestras totales."
+21,La rarefacción parte del supuesto de que todos los individuos tienen la misma probabilidad de ser capturados en el área de estudio.
+,
+1,Riqueza de la comunidad se refiere a la cantidad de especies que existen en un determinado lugar.
+3,La riqueza esperada de especies en un determinado sitio puede ser calculada como un índice.
+5,La riqueza de especies se refiere a la cantidad de especies por unidad de área.
+8,"El incremento del área muestreal no tiene ningún efecto sobre el cálculo de la riqueza, pero si sobre la densidad de especies."
+10,La rarefacción es una forma de evaluar las diferencias en riqueza entre sitios y reducir los efectos de diferente tamaño de muestras y/o individuos.
+12,"Los cambios de la riqueza entre sitios pueden ser comparados directamente, solo es necesario asegurarnos de tener la misma cantidad de muestras, la cantidad de individuos no tienen un efecto sobre este cálculo."
+13,Las curvas de acumulación muestran el número de especies acumuladas conforme se va aumentando el esfuerzo de muestreo en un sitio.
+16,Si las curvas de acumulación de especies no alcanzan la asíntota quiere decir que se podría esperar aún más diversidad de la encontrada en el sitio.
+17,Si las curvas de acumulación de especies no alcanzan la asíntota puede utilizarse rarefacción para determinar la riqueza de especies de una o varias comunidades.
+18,"Cuando se utilizan curvas de acumulación se espera que, conforme se incrementa el esfuerzo de muestreo, se va haciendo cada vez menos frecuente registrar la presencia de una especie nueva, por lo que la pendiente de la curva decrece."
+,
+21,La rarefacción parte del supuesto de que todos los individuos tienen la misma probabilidad de ser capturados en el área de estudio.
+18,"Cuando se utilizan curvas de acumulación se espera que, conforme se incrementa el esfuerzo de muestreo, se va haciendo cada vez menos frecuente registrar la presencia de una especie nueva, por lo que la pendiente de la curva decrece."
+8,"El incremento del área muestreal no tiene ningún efecto sobre el cálculo de la riqueza, pero si sobre la densidad de especies."
+13,Las curvas de acumulación muestran el número de especies acumuladas conforme se va aumentando el esfuerzo de muestreo en un sitio.
+5,La riqueza de especies se refiere a la cantidad de especies por unidad de área.
+3,La riqueza esperada de especies en un determinado sitio puede ser calculada como un índice.
+1,Riqueza de la comunidad se refiere a la cantidad de especies que existen en un determinado lugar.
+14,"Cuando decimos que la curva de acumulación ha alcanzada la asíntota, queremos decir que la riqueza de especies se ha saturado, es decir, se ha alcanzado la riqueza máxima de especies."
+9,La probabilidad de encontrar más especies dentro de una comunidad está directamente relacionada con la cantidad de individuos que puedo encontrar en las muestras.
+6,La riqueza de especies y la densidad de especies son medidas distintas de la cantidad de especies.
+,
+21,La rarefacción parte del supuesto de que todos los individuos tienen la misma probabilidad de ser capturados en el área de estudio.
+2,Cuando proyectamos la posible cantidad de especies en un determinado lugar estamos hablando de riqueza observada de especies.
+11,La rarefacción nos permite reducir el efecto de la densidad de especies sobre el establecimiento de la riqueza observada en un determinado sitio.
+16,Si las curvas de acumulación de especies no alcanzan la asíntota quiere decir que se podría esperar aún más diversidad de la encontrada en el sitio.
+6,La riqueza de especies y la densidad de especies son medidas distintas de la cantidad de especies.
+13,Las curvas de acumulación muestran el número de especies acumuladas conforme se va aumentando el esfuerzo de muestreo en un sitio.
+7,Cuando tengo un incremento en el área muestreal es esperable que la cantidad de especies se incremente.
+18,"Cuando se utilizan curvas de acumulación se espera que, conforme se incrementa el esfuerzo de muestreo, se va haciendo cada vez menos frecuente registrar la presencia de una especie nueva, por lo que la pendiente de la curva decrece."
+17,Si las curvas de acumulación de especies no alcanzan la asíntota puede utilizarse rarefacción para determinar la riqueza de especies de una o varias comunidades.
+1,Riqueza de la comunidad se refiere a la cantidad de especies que existen en un determinado lugar.
+,
+5,La riqueza de especies se refiere a la cantidad de especies por unidad de área.
+10,La rarefacción es una forma de evaluar las diferencias en riqueza entre sitios y reducir los efectos de diferente tamaño de muestras y/o individuos.
+17,Si las curvas de acumulación de especies no alcanzan la asíntota puede utilizarse rarefacción para determinar la riqueza de especies de una o varias comunidades.
+4,"La densidad de especies es el número de especies por unidad de área, es una forma alternativa de llamar a la riqueza."
+3,La riqueza esperada de especies en un determinado sitio puede ser calculada como un índice.
+2,Cuando proyectamos la posible cantidad de especies en un determinado lugar estamos hablando de riqueza observada de especies.
+6,La riqueza de especies y la densidad de especies son medidas distintas de la cantidad de especies.
+11,La rarefacción nos permite reducir el efecto de la densidad de especies sobre el establecimiento de la riqueza observada en un determinado sitio.
+15,"Si dos localidades con la misma riqueza de especies difieren en sus abundancias o en la facilidad con que pueden encontrarse los individuos, un mismo esfuerzo de muestreo podrá resultar en valores distintos de riqueza observada."
+20,"La rarefacción implica construir una curva de acumulación de especies mediante un remuestreo al azar de los datos, y usando un tamaño de muestra menor al total de muestras totales."
+,
+17,Si las curvas de acumulación de especies no alcanzan la asíntota puede utilizarse rarefacción para determinar la riqueza de especies de una o varias comunidades.
+15,"Si dos localidades con la misma riqueza de especies difieren en sus abundancias o en la facilidad con que pueden encontrarse los individuos, un mismo esfuerzo de muestreo podrá resultar en valores distintos de riqueza observada."
+1,Riqueza de la comunidad se refiere a la cantidad de especies que existen en un determinado lugar.
+9,La probabilidad de encontrar más especies dentro de una comunidad está directamente relacionada con la cantidad de individuos que puedo encontrar en las muestras.
+14,"Cuando decimos que la curva de acumulación ha alcanzada la asíntota, queremos decir que la riqueza de especies se ha saturado, es decir, se ha alcanzado la riqueza máxima de especies."
+21,La rarefacción parte del supuesto de que todos los individuos tienen la misma probabilidad de ser capturados en el área de estudio.
+22,Las curvas de rarefacción pueden construirse en base a dos variables; número de muestras o número de individuos.
+11,La rarefacción nos permite reducir el efecto de la densidad de especies sobre el establecimiento de la riqueza observada en un determinado sitio.
+6,La riqueza de especies y la densidad de especies son medidas distintas de la cantidad de especies.
+20,"La rarefacción implica construir una curva de acumulación de especies mediante un remuestreo al azar de los datos, y usando un tamaño de muestra menor al total de muestras totales."
+,
+10,La rarefacción es una forma de evaluar las diferencias en riqueza entre sitios y reducir los efectos de diferente tamaño de muestras y/o individuos.
+17,Si las curvas de acumulación de especies no alcanzan la asíntota puede utilizarse rarefacción para determinar la riqueza de especies de una o varias comunidades.
+15,"Si dos localidades con la misma riqueza de especies difieren en sus abundancias o en la facilidad con que pueden encontrarse los individuos, un mismo esfuerzo de muestreo podrá resultar en valores distintos de riqueza observada."
+8,"El incremento del área muestreal no tiene ningún efecto sobre el cálculo de la riqueza, pero si sobre la densidad de especies."
+11,La rarefacción nos permite reducir el efecto de la densidad de especies sobre el establecimiento de la riqueza observada en un determinado sitio.
+12,"Los cambios de la riqueza entre sitios pueden ser comparados directamente, solo es necesario asegurarnos de tener la misma cantidad de muestras, la cantidad de individuos no tienen un efecto sobre este cálculo."
+6,La riqueza de especies y la densidad de especies son medidas distintas de la cantidad de especies.
+16,Si las curvas de acumulación de especies no alcanzan la asíntota quiere decir que se podría esperar aún más diversidad de la encontrada en el sitio.
+5,La riqueza de especies se refiere a la cantidad de especies por unidad de área.
+9,La probabilidad de encontrar más especies dentro de una comunidad está directamente relacionada con la cantidad de individuos que puedo encontrar en las muestras.
+,
+7,Cuando tengo un incremento en el área muestreal es esperable que la cantidad de especies se incremente.
+10,La rarefacción es una forma de evaluar las diferencias en riqueza entre sitios y reducir los efectos de diferente tamaño de muestras y/o individuos.
+4,"La densidad de especies es el número de especies por unidad de área, es una forma alternativa de llamar a la riqueza."
+21,La rarefacción parte del supuesto de que todos los individuos tienen la misma probabilidad de ser capturados en el área de estudio.
+13,Las curvas de acumulación muestran el número de especies acumuladas conforme se va aumentando el esfuerzo de muestreo en un sitio.
+22,Las curvas de rarefacción pueden construirse en base a dos variables; número de muestras o número de individuos.
+11,La rarefacción nos permite reducir el efecto de la densidad de especies sobre el establecimiento de la riqueza observada en un determinado sitio.
+2,Cuando proyectamos la posible cantidad de especies en un determinado lugar estamos hablando de riqueza observada de especies.
+3,La riqueza esperada de especies en un determinado sitio puede ser calculada como un índice.
+12,"Los cambios de la riqueza entre sitios pueden ser comparados directamente, solo es necesario asegurarnos de tener la misma cantidad de muestras, la cantidad de individuos no tienen un efecto sobre este cálculo."
+,
+6,La riqueza de especies y la densidad de especies son medidas distintas de la cantidad de especies.
+14,"Cuando decimos que la curva de acumulación ha alcanzada la asíntota, queremos decir que la riqueza de especies se ha saturado, es decir, se ha alcanzado la riqueza máxima de especies."
+15,"Si dos localidades con la misma riqueza de especies difieren en sus abundancias o en la facilidad con que pueden encontrarse los individuos, un mismo esfuerzo de muestreo podrá resultar en valores distintos de riqueza observada."
+17,Si las curvas de acumulación de especies no alcanzan la asíntota puede utilizarse rarefacción para determinar la riqueza de especies de una o varias comunidades.
+5,La riqueza de especies se refiere a la cantidad de especies por unidad de área.
+11,La rarefacción nos permite reducir el efecto de la densidad de especies sobre el establecimiento de la riqueza observada en un determinado sitio.
+21,La rarefacción parte del supuesto de que todos los individuos tienen la misma probabilidad de ser capturados en el área de estudio.
+3,La riqueza esperada de especies en un determinado sitio puede ser calculada como un índice.
+1,Riqueza de la comunidad se refiere a la cantidad de especies que existen en un determinado lugar.
+19,La rarefacción calcula el número de especies esperadas en el caso de que todas las muestras tuviesen el mismo número de individuos capturados.
+,
+18,"Cuando se utilizan curvas de acumulación se espera que, conforme se incrementa el esfuerzo de muestreo, se va haciendo cada vez menos frecuente registrar la presencia de una especie nueva, por lo que la pendiente de la curva decrece."
+2,Cuando proyectamos la posible cantidad de especies en un determinado lugar estamos hablando de riqueza observada de especies.
+22,Las curvas de rarefacción pueden construirse en base a dos variables; número de muestras o número de individuos.
+10,La rarefacción es una forma de evaluar las diferencias en riqueza entre sitios y reducir los efectos de diferente tamaño de muestras y/o individuos.
+3,La riqueza esperada de especies en un determinado sitio puede ser calculada como un índice.
+4,"La densidad de especies es el número de especies por unidad de área, es una forma alternativa de llamar a la riqueza."
+12,"Los cambios de la riqueza entre sitios pueden ser comparados directamente, solo es necesario asegurarnos de tener la misma cantidad de muestras, la cantidad de individuos no tienen un efecto sobre este cálculo."
+5,La riqueza de especies se refiere a la cantidad de especies por unidad de área.
+7,Cuando tengo un incremento en el área muestreal es esperable que la cantidad de especies se incremente.
+6,La riqueza de especies y la densidad de especies son medidas distintas de la cantidad de especies.
+,
+19,La rarefacción calcula el número de especies esperadas en el caso de que todas las muestras tuviesen el mismo número de individuos capturados.
+16,Si las curvas de acumulación de especies no alcanzan la asíntota quiere decir que se podría esperar aún más diversidad de la encontrada en el sitio.
+9,La probabilidad de encontrar más especies dentro de una comunidad está directamente relacionada con la cantidad de individuos que puedo encontrar en las muestras.
+3,La riqueza esperada de especies en un determinado sitio puede ser calculada como un índice.
+17,Si las curvas de acumulación de especies no alcanzan la asíntota puede utilizarse rarefacción para determinar la riqueza de especies de una o varias comunidades.
+2,Cuando proyectamos la posible cantidad de especies en un determinado lugar estamos hablando de riqueza observada de especies.
+7,Cuando tengo un incremento en el área muestreal es esperable que la cantidad de especies se incremente.
+6,La riqueza de especies y la densidad de especies son medidas distintas de la cantidad de especies.
+21,La rarefacción parte del supuesto de que todos los individuos tienen la misma probabilidad de ser capturados en el área de estudio.
+11,La rarefacción nos permite reducir el efecto de la densidad de especies sobre el establecimiento de la riqueza observada en un determinado sitio.
+,
+3,La riqueza esperada de especies en un determinado sitio puede ser calculada como un índice.
+19,La rarefacción calcula el número de especies esperadas en el caso de que todas las muestras tuviesen el mismo número de individuos capturados.
+5,La riqueza de especies se refiere a la cantidad de especies por unidad de área.
+14,"Cuando decimos que la curva de acumulación ha alcanzada la asíntota, queremos decir que la riqueza de especies se ha saturado, es decir, se ha alcanzado la riqueza máxima de especies."
+11,La rarefacción nos permite reducir el efecto de la densidad de especies sobre el establecimiento de la riqueza observada en un determinado sitio.
+16,Si las curvas de acumulación de especies no alcanzan la asíntota quiere decir que se podría esperar aún más diversidad de la encontrada en el sitio.
+18,"Cuando se utilizan curvas de acumulación se espera que, conforme se incrementa el esfuerzo de muestreo, se va haciendo cada vez menos frecuente registrar la presencia de una especie nueva, por lo que la pendiente de la curva decrece."
+2,Cuando proyectamos la posible cantidad de especies en un determinado lugar estamos hablando de riqueza observada de especies.
+17,Si las curvas de acumulación de especies no alcanzan la asíntota puede utilizarse rarefacción para determinar la riqueza de especies de una o varias comunidades.
+7,Cuando tengo un incremento en el área muestreal es esperable que la cantidad de especies se incremente.
+,
+17,Si las curvas de acumulación de especies no alcanzan la asíntota puede utilizarse rarefacción para determinar la riqueza de especies de una o varias comunidades.
+4,"La densidad de especies es el número de especies por unidad de área, es una forma alternativa de llamar a la riqueza."
+2,Cuando proyectamos la posible cantidad de especies en un determinado lugar estamos hablando de riqueza observada de especies.
+18,"Cuando se utilizan curvas de acumulación se espera que, conforme se incrementa el esfuerzo de muestreo, se va haciendo cada vez menos frecuente registrar la presencia de una especie nueva, por lo que la pendiente de la curva decrece."
+5,La riqueza de especies se refiere a la cantidad de especies por unidad de área.
+16,Si las curvas de acumulación de especies no alcanzan la asíntota quiere decir que se podría esperar aún más diversidad de la encontrada en el sitio.
+9,La probabilidad de encontrar más especies dentro de una comunidad está directamente relacionada con la cantidad de individuos que puedo encontrar en las muestras.
+10,La rarefacción es una forma de evaluar las diferencias en riqueza entre sitios y reducir los efectos de diferente tamaño de muestras y/o individuos.
+14,"Cuando decimos que la curva de acumulación ha alcanzada la asíntota, queremos decir que la riqueza de especies se ha saturado, es decir, se ha alcanzado la riqueza máxima de especies."
+15,"Si dos localidades con la misma riqueza de especies difieren en sus abundancias o en la facilidad con que pueden encontrarse los individuos, un mismo esfuerzo de muestreo podrá resultar en valores distintos de riqueza observada."
+,
+7,Cuando tengo un incremento en el área muestreal es esperable que la cantidad de especies se incremente.
+6,La riqueza de especies y la densidad de especies son medidas distintas de la cantidad de especies.
+16,Si las curvas de acumulación de especies no alcanzan la asíntota quiere decir que se podría esperar aún más diversidad de la encontrada en el sitio.
+17,Si las curvas de acumulación de especies no alcanzan la asíntota puede utilizarse rarefacción para determinar la riqueza de especies de una o varias comunidades.
+8,"El incremento del área muestreal no tiene ningún efecto sobre el cálculo de la riqueza, pero si sobre la densidad de especies."
+4,"La densidad de especies es el número de especies por unidad de área, es una forma alternativa de llamar a la riqueza."
+13,Las curvas de acumulación muestran el número de especies acumuladas conforme se va aumentando el esfuerzo de muestreo en un sitio.
+22,Las curvas de rarefacción pueden construirse en base a dos variables; número de muestras o número de individuos.
+11,La rarefacción nos permite reducir el efecto de la densidad de especies sobre el establecimiento de la riqueza observada en un determinado sitio.
+9,La probabilidad de encontrar más especies dentro de una comunidad está directamente relacionada con la cantidad de individuos que puedo encontrar en las muestras.
+,
+14,"Cuando decimos que la curva de acumulación ha alcanzada la asíntota, queremos decir que la riqueza de especies se ha saturado, es decir, se ha alcanzado la riqueza máxima de especies."
+21,La rarefacción parte del supuesto de que todos los individuos tienen la misma probabilidad de ser capturados en el área de estudio.
+8,"El incremento del área muestreal no tiene ningún efecto sobre el cálculo de la riqueza, pero si sobre la densidad de especies."
+2,Cuando proyectamos la posible cantidad de especies en un determinado lugar estamos hablando de riqueza observada de especies.
+13,Las curvas de acumulación muestran el número de especies acumuladas conforme se va aumentando el esfuerzo de muestreo en un sitio.
+9,La probabilidad de encontrar más especies dentro de una comunidad está directamente relacionada con la cantidad de individuos que puedo encontrar en las muestras.
+6,La riqueza de especies y la densidad de especies son medidas distintas de la cantidad de especies.
+19,La rarefacción calcula el número de especies esperadas en el caso de que todas las muestras tuviesen el mismo número de individuos capturados.
+1,Riqueza de la comunidad se refiere a la cantidad de especies que existen en un determinado lugar.
+15,"Si dos localidades con la misma riqueza de especies difieren en sus abundancias o en la facilidad con que pueden encontrarse los individuos, un mismo esfuerzo de muestreo podrá resultar en valores distintos de riqueza observada."
+,
+15,"Si dos localidades con la misma riqueza de especies difieren en sus abundancias o en la facilidad con que pueden encontrarse los individuos, un mismo esfuerzo de muestreo podrá resultar en valores distintos de riqueza observada."
+17,Si las curvas de acumulación de especies no alcanzan la asíntota puede utilizarse rarefacción para determinar la riqueza de especies de una o varias comunidades.
+5,La riqueza de especies se refiere a la cantidad de especies por unidad de área.
+22,Las curvas de rarefacción pueden construirse en base a dos variables; número de muestras o número de individuos.
+16,Si las curvas de acumulación de especies no alcanzan la asíntota quiere decir que se podría esperar aún más diversidad de la encontrada en el sitio.
+11,La rarefacción nos permite reducir el efecto de la densidad de especies sobre el establecimiento de la riqueza observada en un determinado sitio.
+19,La rarefacción calcula el número de especies esperadas en el caso de que todas las muestras tuviesen el mismo número de individuos capturados.
+2,Cuando proyectamos la posible cantidad de especies en un determinado lugar estamos hablando de riqueza observada de especies.
+8,"El incremento del área muestreal no tiene ningún efecto sobre el cálculo de la riqueza, pero si sobre la densidad de especies."
+3,La riqueza esperada de especies en un determinado sitio puede ser calculada como un índice.
+,
+6,La riqueza de especies y la densidad de especies son medidas distintas de la cantidad de especies.
+1,Riqueza de la comunidad se refiere a la cantidad de especies que existen en un determinado lugar.
+7,Cuando tengo un incremento en el área muestreal es esperable que la cantidad de especies se incremente.
+5,La riqueza de especies se refiere a la cantidad de especies por unidad de área.
+2,Cuando proyectamos la posible cantidad de especies en un determinado lugar estamos hablando de riqueza observada de especies.
+16,Si las curvas de acumulación de especies no alcanzan la asíntota quiere decir que se podría esperar aún más diversidad de la encontrada en el sitio.
+10,La rarefacción es una forma de evaluar las diferencias en riqueza entre sitios y reducir los efectos de diferente tamaño de muestras y/o individuos.
+15,"Si dos localidades con la misma riqueza de especies difieren en sus abundancias o en la facilidad con que pueden encontrarse los individuos, un mismo esfuerzo de muestreo podrá resultar en valores distintos de riqueza observada."
+14,"Cuando decimos que la curva de acumulación ha alcanzada la asíntota, queremos decir que la riqueza de especies se ha saturado, es decir, se ha alcanzado la riqueza máxima de especies."
+21,La rarefacción parte del supuesto de que todos los individuos tienen la misma probabilidad de ser capturados en el área de estudio.
+,
+8,"El incremento del área muestreal no tiene ningún efecto sobre el cálculo de la riqueza, pero si sobre la densidad de especies."
+21,La rarefacción parte del supuesto de que todos los individuos tienen la misma probabilidad de ser capturados en el área de estudio.
+12,"Los cambios de la riqueza entre sitios pueden ser comparados directamente, solo es necesario asegurarnos de tener la misma cantidad de muestras, la cantidad de individuos no tienen un efecto sobre este cálculo."
+15,"Si dos localidades con la misma riqueza de especies difieren en sus abundancias o en la facilidad con que pueden encontrarse los individuos, un mismo esfuerzo de muestreo podrá resultar en valores distintos de riqueza observada."
+22,Las curvas de rarefacción pueden construirse en base a dos variables; número de muestras o número de individuos.
+14,"Cuando decimos que la curva de acumulación ha alcanzada la asíntota, queremos decir que la riqueza de especies se ha saturado, es decir, se ha alcanzado la riqueza máxima de especies."
+7,Cuando tengo un incremento en el área muestreal es esperable que la cantidad de especies se incremente.
+11,La rarefacción nos permite reducir el efecto de la densidad de especies sobre el establecimiento de la riqueza observada en un determinado sitio.
+13,Las curvas de acumulación muestran el número de especies acumuladas conforme se va aumentando el esfuerzo de muestreo en un sitio.
+1,Riqueza de la comunidad se refiere a la cantidad de especies que existen en un determinado lugar.
+,
+18,"Cuando se utilizan curvas de acumulación se espera que, conforme se incrementa el esfuerzo de muestreo, se va haciendo cada vez menos frecuente registrar la presencia de una especie nueva, por lo que la pendiente de la curva decrece."
+6,La riqueza de especies y la densidad de especies son medidas distintas de la cantidad de especies.
+13,Las curvas de acumulación muestran el número de especies acumuladas conforme se va aumentando el esfuerzo de muestreo en un sitio.
+8,"El incremento del área muestreal no tiene ningún efecto sobre el cálculo de la riqueza, pero si sobre la densidad de especies."
+9,La probabilidad de encontrar más especies dentro de una comunidad está directamente relacionada con la cantidad de individuos que puedo encontrar en las muestras.
+16,Si las curvas de acumulación de especies no alcanzan la asíntota quiere decir que se podría esperar aún más diversidad de la encontrada en el sitio.
+20,"La rarefacción implica construir una curva de acumulación de especies mediante un remuestreo al azar de los datos, y usando un tamaño de muestra menor al total de muestras totales."
+3,La riqueza esperada de especies en un determinado sitio puede ser calculada como un índice.
+7,Cuando tengo un incremento en el área muestreal es esperable que la cantidad de especies se incremente.
+5,La riqueza de especies se refiere a la cantidad de especies por unidad de área.
+,
+7,Cuando tengo un incremento en el área muestreal es esperable que la cantidad de especies se incremente.
+8,"El incremento del área muestreal no tiene ningún efecto sobre el cálculo de la riqueza, pero si sobre la densidad de especies."
+13,Las curvas de acumulación muestran el número de especies acumuladas conforme se va aumentando el esfuerzo de muestreo en un sitio.
+18,"Cuando se utilizan curvas de acumulación se espera que, conforme se incrementa el esfuerzo de muestreo, se va haciendo cada vez menos frecuente registrar la presencia de una especie nueva, por lo que la pendiente de la curva decrece."
+14,"Cuando decimos que la curva de acumulación ha alcanzada la asíntota, queremos decir que la riqueza de especies se ha saturado, es decir, se ha alcanzado la riqueza máxima de especies."
+3,La riqueza esperada de especies en un determinado sitio puede ser calculada como un índice.
+15,"Si dos localidades con la misma riqueza de especies difieren en sus abundancias o en la facilidad con que pueden encontrarse los individuos, un mismo esfuerzo de muestreo podrá resultar en valores distintos de riqueza observada."
+17,Si las curvas de acumulación de especies no alcanzan la asíntota puede utilizarse rarefacción para determinar la riqueza de especies de una o varias comunidades.
+6,La riqueza de especies y la densidad de especies son medidas distintas de la cantidad de especies.
+22,Las curvas de rarefacción pueden construirse en base a dos variables; número de muestras o número de individuos.
+,
+16,Si las curvas de acumulación de especies no alcanzan la asíntota quiere decir que se podría esperar aún más diversidad de la encontrada en el sitio.
+8,"El incremento del área muestreal no tiene ningún efecto sobre el cálculo de la riqueza, pero si sobre la densidad de especies."
+5,La riqueza de especies se refiere a la cantidad de especies por unidad de área.
+11,La rarefacción nos permite reducir el efecto de la densidad de especies sobre el establecimiento de la riqueza observada en un determinado sitio.
+18,"Cuando se utilizan curvas de acumulación se espera que, conforme se incrementa el esfuerzo de muestreo, se va haciendo cada vez menos frecuente registrar la presencia de una especie nueva, por lo que la pendiente de la curva decrece."
+9,La probabilidad de encontrar más especies dentro de una comunidad está directamente relacionada con la cantidad de individuos que puedo encontrar en las muestras.
+7,Cuando tengo un incremento en el área muestreal es esperable que la cantidad de especies se incremente.
+6,La riqueza de especies y la densidad de especies son medidas distintas de la cantidad de especies.
+17,Si las curvas de acumulación de especies no alcanzan la asíntota puede utilizarse rarefacción para determinar la riqueza de especies de una o varias comunidades.
+13,Las curvas de acumulación muestran el número de especies acumuladas conforme se va aumentando el esfuerzo de muestreo en un sitio.
+,
+13,Las curvas de acumulación muestran el número de especies acumuladas conforme se va aumentando el esfuerzo de muestreo en un sitio.
+15,"Si dos localidades con la misma riqueza de especies difieren en sus abundancias o en la facilidad con que pueden encontrarse los individuos, un mismo esfuerzo de muestreo podrá resultar en valores distintos de riqueza observada."
+21,La rarefacción parte del supuesto de que todos los individuos tienen la misma probabilidad de ser capturados en el área de estudio.
+16,Si las curvas de acumulación de especies no alcanzan la asíntota quiere decir que se podría esperar aún más diversidad de la encontrada en el sitio.
+8,"El incremento del área muestreal no tiene ningún efecto sobre el cálculo de la riqueza, pero si sobre la densidad de especies."
+5,La riqueza de especies se refiere a la cantidad de especies por unidad de área.
+9,La probabilidad de encontrar más especies dentro de una comunidad está directamente relacionada con la cantidad de individuos que puedo encontrar en las muestras.
+19,La rarefacción calcula el número de especies esperadas en el caso de que todas las muestras tuviesen el mismo número de individuos capturados.
+10,La rarefacción es una forma de evaluar las diferencias en riqueza entre sitios y reducir los efectos de diferente tamaño de muestras y/o individuos.
+3,La riqueza esperada de especies en un determinado sitio puede ser calculada como un índice.
+,
+10,La rarefacción es una forma de evaluar las diferencias en riqueza entre sitios y reducir los efectos de diferente tamaño de muestras y/o individuos.
+12,"Los cambios de la riqueza entre sitios pueden ser comparados directamente, solo es necesario asegurarnos de tener la misma cantidad de muestras, la cantidad de individuos no tienen un efecto sobre este cálculo."
+4,"La densidad de especies es el número de especies por unidad de área, es una forma alternativa de llamar a la riqueza."
+21,La rarefacción parte del supuesto de que todos los individuos tienen la misma probabilidad de ser capturados en el área de estudio.
+6,La riqueza de especies y la densidad de especies son medidas distintas de la cantidad de especies.
+13,Las curvas de acumulación muestran el número de especies acumuladas conforme se va aumentando el esfuerzo de muestreo en un sitio.
+11,La rarefacción nos permite reducir el efecto de la densidad de especies sobre el establecimiento de la riqueza observada en un determinado sitio.
+17,Si las curvas de acumulación de especies no alcanzan la asíntota puede utilizarse rarefacción para determinar la riqueza de especies de una o varias comunidades.
+9,La probabilidad de encontrar más especies dentro de una comunidad está directamente relacionada con la cantidad de individuos que puedo encontrar en las muestras.
+16,Si las curvas de acumulación de especies no alcanzan la asíntota quiere decir que se podría esperar aún más diversidad de la encontrada en el sitio.
+,
+16,Si las curvas de acumulación de especies no alcanzan la asíntota quiere decir que se podría esperar aún más diversidad de la encontrada en el sitio.
+9,La probabilidad de encontrar más especies dentro de una comunidad está directamente relacionada con la cantidad de individuos que puedo encontrar en las muestras.
+18,"Cuando se utilizan curvas de acumulación se espera que, conforme se incrementa el esfuerzo de muestreo, se va haciendo cada vez menos frecuente registrar la presencia de una especie nueva, por lo que la pendiente de la curva decrece."
+11,La rarefacción nos permite reducir el efecto de la densidad de especies sobre el establecimiento de la riqueza observada en un determinado sitio.
+6,La riqueza de especies y la densidad de especies son medidas distintas de la cantidad de especies.
+12,"Los cambios de la riqueza entre sitios pueden ser comparados directamente, solo es necesario asegurarnos de tener la misma cantidad de muestras, la cantidad de individuos no tienen un efecto sobre este cálculo."
+22,Las curvas de rarefacción pueden construirse en base a dos variables; número de muestras o número de individuos.
+20,"La rarefacción implica construir una curva de acumulación de especies mediante un remuestreo al azar de los datos, y usando un tamaño de muestra menor al total de muestras totales."
+13,Las curvas de acumulación muestran el número de especies acumuladas conforme se va aumentando el esfuerzo de muestreo en un sitio.
+5,La riqueza de especies se refiere a la cantidad de especies por unidad de área.
+,
+19,La rarefacción calcula el número de especies esperadas en el caso de que todas las muestras tuviesen el mismo número de individuos capturados.
+9,La probabilidad de encontrar más especies dentro de una comunidad está directamente relacionada con la cantidad de individuos que puedo encontrar en las muestras.
+21,La rarefacción parte del supuesto de que todos los individuos tienen la misma probabilidad de ser capturados en el área de estudio.
+1,Riqueza de la comunidad se refiere a la cantidad de especies que existen en un determinado lugar.
+4,"La densidad de especies es el número de especies por unidad de área, es una forma alternativa de llamar a la riqueza."
+5,La riqueza de especies se refiere a la cantidad de especies por unidad de área.
+18,"Cuando se utilizan curvas de acumulación se espera que, conforme se incrementa el esfuerzo de muestreo, se va haciendo cada vez menos frecuente registrar la presencia de una especie nueva, por lo que la pendiente de la curva decrece."
+16,Si las curvas de acumulación de especies no alcanzan la asíntota quiere decir que se podría esperar aún más diversidad de la encontrada en el sitio.
+8,"El incremento del área muestreal no tiene ningún efecto sobre el cálculo de la riqueza, pero si sobre la densidad de especies."
+22,Las curvas de rarefacción pueden construirse en base a dos variables; número de muestras o número de individuos.
+,
+3,La riqueza esperada de especies en un determinado sitio puede ser calculada como un índice.
+6,La riqueza de especies y la densidad de especies son medidas distintas de la cantidad de especies.
+18,"Cuando se utilizan curvas de acumulación se espera que, conforme se incrementa el esfuerzo de muestreo, se va haciendo cada vez menos frecuente registrar la presencia de una especie nueva, por lo que la pendiente de la curva decrece."
+12,"Los cambios de la riqueza entre sitios pueden ser comparados directamente, solo es necesario asegurarnos de tener la misma cantidad de muestras, la cantidad de individuos no tienen un efecto sobre este cálculo."
+5,La riqueza de especies se refiere a la cantidad de especies por unidad de área.
+21,La rarefacción parte del supuesto de que todos los individuos tienen la misma probabilidad de ser capturados en el área de estudio.
+17,Si las curvas de acumulación de especies no alcanzan la asíntota puede utilizarse rarefacción para determinar la riqueza de especies de una o varias comunidades.
+1,Riqueza de la comunidad se refiere a la cantidad de especies que existen en un determinado lugar.
+7,Cuando tengo un incremento en el área muestreal es esperable que la cantidad de especies se incremente.
+4,"La densidad de especies es el número de especies por unidad de área, es una forma alternativa de llamar a la riqueza."
+,
+12,"Los cambios de la riqueza entre sitios pueden ser comparados directamente, solo es necesario asegurarnos de tener la misma cantidad de muestras, la cantidad de individuos no tienen un efecto sobre este cálculo."
+7,Cuando tengo un incremento en el área muestreal es esperable que la cantidad de especies se incremente.
+11,La rarefacción nos permite reducir el efecto de la densidad de especies sobre el establecimiento de la riqueza observada en un determinado sitio.
+16,Si las curvas de acumulación de especies no alcanzan la asíntota quiere decir que se podría esperar aún más diversidad de la encontrada en el sitio.
+4,"La densidad de especies es el número de especies por unidad de área, es una forma alternativa de llamar a la riqueza."
+17,Si las curvas de acumulación de especies no alcanzan la asíntota puede utilizarse rarefacción para determinar la riqueza de especies de una o varias comunidades.
+9,La probabilidad de encontrar más especies dentro de una comunidad está directamente relacionada con la cantidad de individuos que puedo encontrar en las muestras.
+1,Riqueza de la comunidad se refiere a la cantidad de especies que existen en un determinado lugar.
+19,La rarefacción calcula el número de especies esperadas en el caso de que todas las muestras tuviesen el mismo número de individuos capturados.
+8,"El incremento del área muestreal no tiene ningún efecto sobre el cálculo de la riqueza, pero si sobre la densidad de especies."
+,
+21,La rarefacción parte del supuesto de que todos los individuos tienen la misma probabilidad de ser capturados en el área de estudio.
+7,Cuando tengo un incremento en el área muestreal es esperable que la cantidad de especies se incremente.
+13,Las curvas de acumulación muestran el número de especies acumuladas conforme se va aumentando el esfuerzo de muestreo en un sitio.
+5,La riqueza de especies se refiere a la cantidad de especies por unidad de área.
+9,La probabilidad de encontrar más especies dentro de una comunidad está directamente relacionada con la cantidad de individuos que puedo encontrar en las muestras.
+22,Las curvas de rarefacción pueden construirse en base a dos variables; número de muestras o número de individuos.
+18,"Cuando se utilizan curvas de acumulación se espera que, conforme se incrementa el esfuerzo de muestreo, se va haciendo cada vez menos frecuente registrar la presencia de una especie nueva, por lo que la pendiente de la curva decrece."
+17,Si las curvas de acumulación de especies no alcanzan la asíntota puede utilizarse rarefacción para determinar la riqueza de especies de una o varias comunidades.
+1,Riqueza de la comunidad se refiere a la cantidad de especies que existen en un determinado lugar.
+8,"El incremento del área muestreal no tiene ningún efecto sobre el cálculo de la riqueza, pero si sobre la densidad de especies."
+,
+14,"Cuando decimos que la curva de acumulación ha alcanzada la asíntota, queremos decir que la riqueza de especies se ha saturado, es decir, se ha alcanzado la riqueza máxima de especies."
+21,La rarefacción parte del supuesto de que todos los individuos tienen la misma probabilidad de ser capturados en el área de estudio.
+2,Cuando proyectamos la posible cantidad de especies en un determinado lugar estamos hablando de riqueza observada de especies.
+12,"Los cambios de la riqueza entre sitios pueden ser comparados directamente, solo es necesario asegurarnos de tener la misma cantidad de muestras, la cantidad de individuos no tienen un efecto sobre este cálculo."
+7,Cuando tengo un incremento en el área muestreal es esperable que la cantidad de especies se incremente.
+19,La rarefacción calcula el número de especies esperadas en el caso de que todas las muestras tuviesen el mismo número de individuos capturados.
+4,"La densidad de especies es el número de especies por unidad de área, es una forma alternativa de llamar a la riqueza."
+10,La rarefacción es una forma de evaluar las diferencias en riqueza entre sitios y reducir los efectos de diferente tamaño de muestras y/o individuos.
+11,La rarefacción nos permite reducir el efecto de la densidad de especies sobre el establecimiento de la riqueza observada en un determinado sitio.
+8,"El incremento del área muestreal no tiene ningún efecto sobre el cálculo de la riqueza, pero si sobre la densidad de especies."
+,
+16,Si las curvas de acumulación de especies no alcanzan la asíntota quiere decir que se podría esperar aún más diversidad de la encontrada en el sitio.
+4,"La densidad de especies es el número de especies por unidad de área, es una forma alternativa de llamar a la riqueza."
+6,La riqueza de especies y la densidad de especies son medidas distintas de la cantidad de especies.
+12,"Los cambios de la riqueza entre sitios pueden ser comparados directamente, solo es necesario asegurarnos de tener la misma cantidad de muestras, la cantidad de individuos no tienen un efecto sobre este cálculo."
+13,Las curvas de acumulación muestran el número de especies acumuladas conforme se va aumentando el esfuerzo de muestreo en un sitio.
+18,"Cuando se utilizan curvas de acumulación se espera que, conforme se incrementa el esfuerzo de muestreo, se va haciendo cada vez menos frecuente registrar la presencia de una especie nueva, por lo que la pendiente de la curva decrece."
+21,La rarefacción parte del supuesto de que todos los individuos tienen la misma probabilidad de ser capturados en el área de estudio.
+7,Cuando tengo un incremento en el área muestreal es esperable que la cantidad de especies se incremente.
+22,Las curvas de rarefacción pueden construirse en base a dos variables; número de muestras o número de individuos.
+8,"El incremento del área muestreal no tiene ningún efecto sobre el cálculo de la riqueza, pero si sobre la densidad de especies."
+,
+15,"Si dos localidades con la misma riqueza de especies difieren en sus abundancias o en la facilidad con que pueden encontrarse los individuos, un mismo esfuerzo de muestreo podrá resultar en valores distintos de riqueza observada."
+19,La rarefacción calcula el número de especies esperadas en el caso de que todas las muestras tuviesen el mismo número de individuos capturados.
+10,La rarefacción es una forma de evaluar las diferencias en riqueza entre sitios y reducir los efectos de diferente tamaño de muestras y/o individuos.
+5,La riqueza de especies se refiere a la cantidad de especies por unidad de área.
+13,Las curvas de acumulación muestran el número de especies acumuladas conforme se va aumentando el esfuerzo de muestreo en un sitio.
+8,"El incremento del área muestreal no tiene ningún efecto sobre el cálculo de la riqueza, pero si sobre la densidad de especies."
+12,"Los cambios de la riqueza entre sitios pueden ser comparados directamente, solo es necesario asegurarnos de tener la misma cantidad de muestras, la cantidad de individuos no tienen un efecto sobre este cálculo."
+1,Riqueza de la comunidad se refiere a la cantidad de especies que existen en un determinado lugar.
+17,Si las curvas de acumulación de especies no alcanzan la asíntota puede utilizarse rarefacción para determinar la riqueza de especies de una o varias comunidades.
+3,La riqueza esperada de especies en un determinado sitio puede ser calculada como un índice.
+,
+19,La rarefacción calcula el número de especies esperadas en el caso de que todas las muestras tuviesen el mismo número de individuos capturados.
+14,"Cuando decimos que la curva de acumulación ha alcanzada la asíntota, queremos decir que la riqueza de especies se ha saturado, es decir, se ha alcanzado la riqueza máxima de especies."
+3,La riqueza esperada de especies en un determinado sitio puede ser calculada como un índice.
+21,La rarefacción parte del supuesto de que todos los individuos tienen la misma probabilidad de ser capturados en el área de estudio.
+11,La rarefacción nos permite reducir el efecto de la densidad de especies sobre el establecimiento de la riqueza observada en un determinado sitio.
+10,La rarefacción es una forma de evaluar las diferencias en riqueza entre sitios y reducir los efectos de diferente tamaño de muestras y/o individuos.
+8,"El incremento del área muestreal no tiene ningún efecto sobre el cálculo de la riqueza, pero si sobre la densidad de especies."
+12,"Los cambios de la riqueza entre sitios pueden ser comparados directamente, solo es necesario asegurarnos de tener la misma cantidad de muestras, la cantidad de individuos no tienen un efecto sobre este cálculo."
+15,"Si dos localidades con la misma riqueza de especies difieren en sus abundancias o en la facilidad con que pueden encontrarse los individuos, un mismo esfuerzo de muestreo podrá resultar en valores distintos de riqueza observada."
+17,Si las curvas de acumulación de especies no alcanzan la asíntota puede utilizarse rarefacción para determinar la riqueza de especies de una o varias comunidades.
+,
+12,"Los cambios de la riqueza entre sitios pueden ser comparados directamente, solo es necesario asegurarnos de tener la misma cantidad de muestras, la cantidad de individuos no tienen un efecto sobre este cálculo."
+13,Las curvas de acumulación muestran el número de especies acumuladas conforme se va aumentando el esfuerzo de muestreo en un sitio.
+2,Cuando proyectamos la posible cantidad de especies en un determinado lugar estamos hablando de riqueza observada de especies.
+9,La probabilidad de encontrar más especies dentro de una comunidad está directamente relacionada con la cantidad de individuos que puedo encontrar en las muestras.
+22,Las curvas de rarefacción pueden construirse en base a dos variables; número de muestras o número de individuos.
+21,La rarefacción parte del supuesto de que todos los individuos tienen la misma probabilidad de ser capturados en el área de estudio.
+19,La rarefacción calcula el número de especies esperadas en el caso de que todas las muestras tuviesen el mismo número de individuos capturados.
+15,"Si dos localidades con la misma riqueza de especies difieren en sus abundancias o en la facilidad con que pueden encontrarse los individuos, un mismo esfuerzo de muestreo podrá resultar en valores distintos de riqueza observada."
+4,"La densidad de especies es el número de especies por unidad de área, es una forma alternativa de llamar a la riqueza."
+1,Riqueza de la comunidad se refiere a la cantidad de especies que existen en un determinado lugar.
+,
+12,"Los cambios de la riqueza entre sitios pueden ser comparados directamente, solo es necesario asegurarnos de tener la misma cantidad de muestras, la cantidad de individuos no tienen un efecto sobre este cálculo."
+1,Riqueza de la comunidad se refiere a la cantidad de especies que existen en un determinado lugar.
+20,"La rarefacción implica construir una curva de acumulación de especies mediante un remuestreo al azar de los datos, y usando un tamaño de muestra menor al total de muestras totales."
+13,Las curvas de acumulación muestran el número de especies acumuladas conforme se va aumentando el esfuerzo de muestreo en un sitio.
+14,"Cuando decimos que la curva de acumulación ha alcanzada la asíntota, queremos decir que la riqueza de especies se ha saturado, es decir, se ha alcanzado la riqueza máxima de especies."
+17,Si las curvas de acumulación de especies no alcanzan la asíntota puede utilizarse rarefacción para determinar la riqueza de especies de una o varias comunidades.
+15,"Si dos localidades con la misma riqueza de especies difieren en sus abundancias o en la facilidad con que pueden encontrarse los individuos, un mismo esfuerzo de muestreo podrá resultar en valores distintos de riqueza observada."
+21,La rarefacción parte del supuesto de que todos los individuos tienen la misma probabilidad de ser capturados en el área de estudio.
+4,"La densidad de especies es el número de especies por unidad de área, es una forma alternativa de llamar a la riqueza."
+10,La rarefacción es una forma de evaluar las diferencias en riqueza entre sitios y reducir los efectos de diferente tamaño de muestras y/o individuos.
+,
+2,Cuando proyectamos la posible cantidad de especies en un determinado lugar estamos hablando de riqueza observada de especies.
+5,La riqueza de especies se refiere a la cantidad de especies por unidad de área.
+22,Las curvas de rarefacción pueden construirse en base a dos variables; número de muestras o número de individuos.
+8,"El incremento del área muestreal no tiene ningún efecto sobre el cálculo de la riqueza, pero si sobre la densidad de especies."
+20,"La rarefacción implica construir una curva de acumulación de especies mediante un remuestreo al azar de los datos, y usando un tamaño de muestra menor al total de muestras totales."
+7,Cuando tengo un incremento en el área muestreal es esperable que la cantidad de especies se incremente.
+17,Si las curvas de acumulación de especies no alcanzan la asíntota puede utilizarse rarefacción para determinar la riqueza de especies de una o varias comunidades.
+18,"Cuando se utilizan curvas de acumulación se espera que, conforme se incrementa el esfuerzo de muestreo, se va haciendo cada vez menos frecuente registrar la presencia de una especie nueva, por lo que la pendiente de la curva decrece."
+4,"La densidad de especies es el número de especies por unidad de área, es una forma alternativa de llamar a la riqueza."
+3,La riqueza esperada de especies en un determinado sitio puede ser calculada como un índice.
+,
+15,"Si dos localidades con la misma riqueza de especies difieren en sus abundancias o en la facilidad con que pueden encontrarse los individuos, un mismo esfuerzo de muestreo podrá resultar en valores distintos de riqueza observada."
+16,Si las curvas de acumulación de especies no alcanzan la asíntota quiere decir que se podría esperar aún más diversidad de la encontrada en el sitio.
+5,La riqueza de especies se refiere a la cantidad de especies por unidad de área.
+19,La rarefacción calcula el número de especies esperadas en el caso de que todas las muestras tuviesen el mismo número de individuos capturados.
+1,Riqueza de la comunidad se refiere a la cantidad de especies que existen en un determinado lugar.
+6,La riqueza de especies y la densidad de especies son medidas distintas de la cantidad de especies.
+18,"Cuando se utilizan curvas de acumulación se espera que, conforme se incrementa el esfuerzo de muestreo, se va haciendo cada vez menos frecuente registrar la presencia de una especie nueva, por lo que la pendiente de la curva decrece."
+21,La rarefacción parte del supuesto de que todos los individuos tienen la misma probabilidad de ser capturados en el área de estudio.
+4,"La densidad de especies es el número de especies por unidad de área, es una forma alternativa de llamar a la riqueza."
+14,"Cuando decimos que la curva de acumulación ha alcanzada la asíntota, queremos decir que la riqueza de especies se ha saturado, es decir, se ha alcanzado la riqueza máxima de especies."
+,
+16,Si las curvas de acumulación de especies no alcanzan la asíntota quiere decir que se podría esperar aún más diversidad de la encontrada en el sitio.
+5,La riqueza de especies se refiere a la cantidad de especies por unidad de área.
+22,Las curvas de rarefacción pueden construirse en base a dos variables; número de muestras o número de individuos.
+15,"Si dos localidades con la misma riqueza de especies difieren en sus abundancias o en la facilidad con que pueden encontrarse los individuos, un mismo esfuerzo de muestreo podrá resultar en valores distintos de riqueza observada."
+2,Cuando proyectamos la posible cantidad de especies en un determinado lugar estamos hablando de riqueza observada de especies.
+21,La rarefacción parte del supuesto de que todos los individuos tienen la misma probabilidad de ser capturados en el área de estudio.
+17,Si las curvas de acumulación de especies no alcanzan la asíntota puede utilizarse rarefacción para determinar la riqueza de especies de una o varias comunidades.
+10,La rarefacción es una forma de evaluar las diferencias en riqueza entre sitios y reducir los efectos de diferente tamaño de muestras y/o individuos.
+11,La rarefacción nos permite reducir el efecto de la densidad de especies sobre el establecimiento de la riqueza observada en un determinado sitio.
+20,"La rarefacción implica construir una curva de acumulación de especies mediante un remuestreo al azar de los datos, y usando un tamaño de muestra menor al total de muestras totales."
+,
+12,"Los cambios de la riqueza entre sitios pueden ser comparados directamente, solo es necesario asegurarnos de tener la misma cantidad de muestras, la cantidad de individuos no tienen un efecto sobre este cálculo."
+13,Las curvas de acumulación muestran el número de especies acumuladas conforme se va aumentando el esfuerzo de muestreo en un sitio.
+18,"Cuando se utilizan curvas de acumulación se espera que, conforme se incrementa el esfuerzo de muestreo, se va haciendo cada vez menos frecuente registrar la presencia de una especie nueva, por lo que la pendiente de la curva decrece."
+8,"El incremento del área muestreal no tiene ningún efecto sobre el cálculo de la riqueza, pero si sobre la densidad de especies."
+3,La riqueza esperada de especies en un determinado sitio puede ser calculada como un índice.
+5,La riqueza de especies se refiere a la cantidad de especies por unidad de área.
+14,"Cuando decimos que la curva de acumulación ha alcanzada la asíntota, queremos decir que la riqueza de especies se ha saturado, es decir, se ha alcanzado la riqueza máxima de especies."
+19,La rarefacción calcula el número de especies esperadas en el caso de que todas las muestras tuviesen el mismo número de individuos capturados.
+2,Cuando proyectamos la posible cantidad de especies en un determinado lugar estamos hablando de riqueza observada de especies.
+7,Cuando tengo un incremento en el área muestreal es esperable que la cantidad de especies se incremente.
+,
+8,"El incremento del área muestreal no tiene ningún efecto sobre el cálculo de la riqueza, pero si sobre la densidad de especies."
+4,"La densidad de especies es el número de especies por unidad de área, es una forma alternativa de llamar a la riqueza."
+13,Las curvas de acumulación muestran el número de especies acumuladas conforme se va aumentando el esfuerzo de muestreo en un sitio.
+2,Cuando proyectamos la posible cantidad de especies en un determinado lugar estamos hablando de riqueza observada de especies.
+20,"La rarefacción implica construir una curva de acumulación de especies mediante un remuestreo al azar de los datos, y usando un tamaño de muestra menor al total de muestras totales."
+7,Cuando tengo un incremento en el área muestreal es esperable que la cantidad de especies se incremente.
+6,La riqueza de especies y la densidad de especies son medidas distintas de la cantidad de especies.
+11,La rarefacción nos permite reducir el efecto de la densidad de especies sobre el establecimiento de la riqueza observada en un determinado sitio.
+12,"Los cambios de la riqueza entre sitios pueden ser comparados directamente, solo es necesario asegurarnos de tener la misma cantidad de muestras, la cantidad de individuos no tienen un efecto sobre este cálculo."
+22,Las curvas de rarefacción pueden construirse en base a dos variables; número de muestras o número de individuos.
+,
+5,La riqueza de especies se refiere a la cantidad de especies por unidad de área.
+18,"Cuando se utilizan curvas de acumulación se espera que, conforme se incrementa el esfuerzo de muestreo, se va haciendo cada vez menos frecuente registrar la presencia de una especie nueva, por lo que la pendiente de la curva decrece."
+22,Las curvas de rarefacción pueden construirse en base a dos variables; número de muestras o número de individuos.
+6,La riqueza de especies y la densidad de especies son medidas distintas de la cantidad de especies.
+16,Si las curvas de acumulación de especies no alcanzan la asíntota quiere decir que se podría esperar aún más diversidad de la encontrada en el sitio.
+1,Riqueza de la comunidad se refiere a la cantidad de especies que existen en un determinado lugar.
+19,La rarefacción calcula el número de especies esperadas en el caso de que todas las muestras tuviesen el mismo número de individuos capturados.
+20,"La rarefacción implica construir una curva de acumulación de especies mediante un remuestreo al azar de los datos, y usando un tamaño de muestra menor al total de muestras totales."
+13,Las curvas de acumulación muestran el número de especies acumuladas conforme se va aumentando el esfuerzo de muestreo en un sitio.
+11,La rarefacción nos permite reducir el efecto de la densidad de especies sobre el establecimiento de la riqueza observada en un determinado sitio.
+,
+13,Las curvas de acumulación muestran el número de especies acumuladas conforme se va aumentando el esfuerzo de muestreo en un sitio.
+9,La probabilidad de encontrar más especies dentro de una comunidad está directamente relacionada con la cantidad de individuos que puedo encontrar en las muestras.
+6,La riqueza de especies y la densidad de especies son medidas distintas de la cantidad de especies.
+3,La riqueza esperada de especies en un determinado sitio puede ser calculada como un índice.
+17,Si las curvas de acumulación de especies no alcanzan la asíntota puede utilizarse rarefacción para determinar la riqueza de especies de una o varias comunidades.
+11,La rarefacción nos permite reducir el efecto de la densidad de especies sobre el establecimiento de la riqueza observada en un determinado sitio.
+15,"Si dos localidades con la misma riqueza de especies difieren en sus abundancias o en la facilidad con que pueden encontrarse los individuos, un mismo esfuerzo de muestreo podrá resultar en valores distintos de riqueza observada."
+16,Si las curvas de acumulación de especies no alcanzan la asíntota quiere decir que se podría esperar aún más diversidad de la encontrada en el sitio.
+18,"Cuando se utilizan curvas de acumulación se espera que, conforme se incrementa el esfuerzo de muestreo, se va haciendo cada vez menos frecuente registrar la presencia de una especie nueva, por lo que la pendiente de la curva decrece."
+12,"Los cambios de la riqueza entre sitios pueden ser comparados directamente, solo es necesario asegurarnos de tener la misma cantidad de muestras, la cantidad de individuos no tienen un efecto sobre este cálculo."
+,
+9,La probabilidad de encontrar más especies dentro de una comunidad está directamente relacionada con la cantidad de individuos que puedo encontrar en las muestras.
+5,La riqueza de especies se refiere a la cantidad de especies por unidad de área.
+14,"Cuando decimos que la curva de acumulación ha alcanzada la asíntota, queremos decir que la riqueza de especies se ha saturado, es decir, se ha alcanzado la riqueza máxima de especies."
+21,La rarefacción parte del supuesto de que todos los individuos tienen la misma probabilidad de ser capturados en el área de estudio.
+10,La rarefacción es una forma de evaluar las diferencias en riqueza entre sitios y reducir los efectos de diferente tamaño de muestras y/o individuos.
+18,"Cuando se utilizan curvas de acumulación se espera que, conforme se incrementa el esfuerzo de muestreo, se va haciendo cada vez menos frecuente registrar la presencia de una especie nueva, por lo que la pendiente de la curva decrece."
+1,Riqueza de la comunidad se refiere a la cantidad de especies que existen en un determinado lugar.
+7,Cuando tengo un incremento en el área muestreal es esperable que la cantidad de especies se incremente.
+15,"Si dos localidades con la misma riqueza de especies difieren en sus abundancias o en la facilidad con que pueden encontrarse los individuos, un mismo esfuerzo de muestreo podrá resultar en valores distintos de riqueza observada."
+2,Cuando proyectamos la posible cantidad de especies en un determinado lugar estamos hablando de riqueza observada de especies.
+,
+1,Riqueza de la comunidad se refiere a la cantidad de especies que existen en un determinado lugar.
+10,La rarefacción es una forma de evaluar las diferencias en riqueza entre sitios y reducir los efectos de diferente tamaño de muestras y/o individuos.
+6,La riqueza de especies y la densidad de especies son medidas distintas de la cantidad de especies.
+9,La probabilidad de encontrar más especies dentro de una comunidad está directamente relacionada con la cantidad de individuos que puedo encontrar en las muestras.
+8,"El incremento del área muestreal no tiene ningún efecto sobre el cálculo de la riqueza, pero si sobre la densidad de especies."
+11,La rarefacción nos permite reducir el efecto de la densidad de especies sobre el establecimiento de la riqueza observada en un determinado sitio.
+16,Si las curvas de acumulación de especies no alcanzan la asíntota quiere decir que se podría esperar aún más diversidad de la encontrada en el sitio.
+17,Si las curvas de acumulación de especies no alcanzan la asíntota puede utilizarse rarefacción para determinar la riqueza de especies de una o varias comunidades.
+21,La rarefacción parte del supuesto de que todos los individuos tienen la misma probabilidad de ser capturados en el área de estudio.
+3,La riqueza esperada de especies en un determinado sitio puede ser calculada como un índice.
+,
+12,"Los cambios de la riqueza entre sitios pueden ser comparados directamente, solo es necesario asegurarnos de tener la misma cantidad de muestras, la cantidad de individuos no tienen un efecto sobre este cálculo."
+1,Riqueza de la comunidad se refiere a la cantidad de especies que existen en un determinado lugar.
+4,"La densidad de especies es el número de especies por unidad de área, es una forma alternativa de llamar a la riqueza."
+5,La riqueza de especies se refiere a la cantidad de especies por unidad de área.
+2,Cuando proyectamos la posible cantidad de especies en un determinado lugar estamos hablando de riqueza observada de especies.
+8,"El incremento del área muestreal no tiene ningún efecto sobre el cálculo de la riqueza, pero si sobre la densidad de especies."
+7,Cuando tengo un incremento en el área muestreal es esperable que la cantidad de especies se incremente.
+18,"Cuando se utilizan curvas de acumulación se espera que, conforme se incrementa el esfuerzo de muestreo, se va haciendo cada vez menos frecuente registrar la presencia de una especie nueva, por lo que la pendiente de la curva decrece."
+15,"Si dos localidades con la misma riqueza de especies difieren en sus abundancias o en la facilidad con que pueden encontrarse los individuos, un mismo esfuerzo de muestreo podrá resultar en valores distintos de riqueza observada."
+6,La riqueza de especies y la densidad de especies son medidas distintas de la cantidad de especies.
+,
+7,Cuando tengo un incremento en el área muestreal es esperable que la cantidad de especies se incremente.
+11,La rarefacción nos permite reducir el efecto de la densidad de especies sobre el establecimiento de la riqueza observada en un determinado sitio.
+8,"El incremento del área muestreal no tiene ningún efecto sobre el cálculo de la riqueza, pero si sobre la densidad de especies."
+1,Riqueza de la comunidad se refiere a la cantidad de especies que existen en un determinado lugar.
+5,La riqueza de especies se refiere a la cantidad de especies por unidad de área.
+6,La riqueza de especies y la densidad de especies son medidas distintas de la cantidad de especies.
+10,La rarefacción es una forma de evaluar las diferencias en riqueza entre sitios y reducir los efectos de diferente tamaño de muestras y/o individuos.
+15,"Si dos localidades con la misma riqueza de especies difieren en sus abundancias o en la facilidad con que pueden encontrarse los individuos, un mismo esfuerzo de muestreo podrá resultar en valores distintos de riqueza observada."
+9,La probabilidad de encontrar más especies dentro de una comunidad está directamente relacionada con la cantidad de individuos que puedo encontrar en las muestras.
+12,"Los cambios de la riqueza entre sitios pueden ser comparados directamente, solo es necesario asegurarnos de tener la misma cantidad de muestras, la cantidad de individuos no tienen un efecto sobre este cálculo."
+,
+22,Las curvas de rarefacción pueden construirse en base a dos variables; número de muestras o número de individuos.
+7,Cuando tengo un incremento en el área muestreal es esperable que la cantidad de especies se incremente.
+9,La probabilidad de encontrar más especies dentro de una comunidad está directamente relacionada con la cantidad de individuos que puedo encontrar en las muestras.
+14,"Cuando decimos que la curva de acumulación ha alcanzada la asíntota, queremos decir que la riqueza de especies se ha saturado, es decir, se ha alcanzado la riqueza máxima de especies."
+19,La rarefacción calcula el número de especies esperadas en el caso de que todas las muestras tuviesen el mismo número de individuos capturados.
+3,La riqueza esperada de especies en un determinado sitio puede ser calculada como un índice.
+5,La riqueza de especies se refiere a la cantidad de especies por unidad de área.
+18,"Cuando se utilizan curvas de acumulación se espera que, conforme se incrementa el esfuerzo de muestreo, se va haciendo cada vez menos frecuente registrar la presencia de una especie nueva, por lo que la pendiente de la curva decrece."
+13,Las curvas de acumulación muestran el número de especies acumuladas conforme se va aumentando el esfuerzo de muestreo en un sitio.
+8,"El incremento del área muestreal no tiene ningún efecto sobre el cálculo de la riqueza, pero si sobre la densidad de especies."
+,
+8,"El incremento del área muestreal no tiene ningún efecto sobre el cálculo de la riqueza, pero si sobre la densidad de especies."
+15,"Si dos localidades con la misma riqueza de especies difieren en sus abundancias o en la facilidad con que pueden encontrarse los individuos, un mismo esfuerzo de muestreo podrá resultar en valores distintos de riqueza observada."
+5,La riqueza de especies se refiere a la cantidad de especies por unidad de área.
+14,"Cuando decimos que la curva de acumulación ha alcanzada la asíntota, queremos decir que la riqueza de especies se ha saturado, es decir, se ha alcanzado la riqueza máxima de especies."
+21,La rarefacción parte del supuesto de que todos los individuos tienen la misma probabilidad de ser capturados en el área de estudio.
+19,La rarefacción calcula el número de especies esperadas en el caso de que todas las muestras tuviesen el mismo número de individuos capturados.
+22,Las curvas de rarefacción pueden construirse en base a dos variables; número de muestras o número de individuos.
+3,La riqueza esperada de especies en un determinado sitio puede ser calculada como un índice.
+20,"La rarefacción implica construir una curva de acumulación de especies mediante un remuestreo al azar de los datos, y usando un tamaño de muestra menor al total de muestras totales."
+11,La rarefacción nos permite reducir el efecto de la densidad de especies sobre el establecimiento de la riqueza observada en un determinado sitio.
+,
+3,La riqueza esperada de especies en un determinado sitio puede ser calculada como un índice.
+19,La rarefacción calcula el número de especies esperadas en el caso de que todas las muestras tuviesen el mismo número de individuos capturados.
+7,Cuando tengo un incremento en el área muestreal es esperable que la cantidad de especies se incremente.
+6,La riqueza de especies y la densidad de especies son medidas distintas de la cantidad de especies.
+20,"La rarefacción implica construir una curva de acumulación de especies mediante un remuestreo al azar de los datos, y usando un tamaño de muestra menor al total de muestras totales."
+12,"Los cambios de la riqueza entre sitios pueden ser comparados directamente, solo es necesario asegurarnos de tener la misma cantidad de muestras, la cantidad de individuos no tienen un efecto sobre este cálculo."
+9,La probabilidad de encontrar más especies dentro de una comunidad está directamente relacionada con la cantidad de individuos que puedo encontrar en las muestras.
+16,Si las curvas de acumulación de especies no alcanzan la asíntota quiere decir que se podría esperar aún más diversidad de la encontrada en el sitio.
+4,"La densidad de especies es el número de especies por unidad de área, es una forma alternativa de llamar a la riqueza."
+2,Cuando proyectamos la posible cantidad de especies en un determinado lugar estamos hablando de riqueza observada de especies.
+,
+9,La probabilidad de encontrar más especies dentro de una comunidad está directamente relacionada con la cantidad de individuos que puedo encontrar en las muestras.
+13,Las curvas de acumulación muestran el número de especies acumuladas conforme se va aumentando el esfuerzo de muestreo en un sitio.
+6,La riqueza de especies y la densidad de especies son medidas distintas de la cantidad de especies.
+18,"Cuando se utilizan curvas de acumulación se espera que, conforme se incrementa el esfuerzo de muestreo, se va haciendo cada vez menos frecuente registrar la presencia de una especie nueva, por lo que la pendiente de la curva decrece."
+22,Las curvas de rarefacción pueden construirse en base a dos variables; número de muestras o número de individuos.
+15,"Si dos localidades con la misma riqueza de especies difieren en sus abundancias o en la facilidad con que pueden encontrarse los individuos, un mismo esfuerzo de muestreo podrá resultar en valores distintos de riqueza observada."
+10,La rarefacción es una forma de evaluar las diferencias en riqueza entre sitios y reducir los efectos de diferente tamaño de muestras y/o individuos.
+4,"La densidad de especies es el número de especies por unidad de área, es una forma alternativa de llamar a la riqueza."
+5,La riqueza de especies se refiere a la cantidad de especies por unidad de área.
+16,Si las curvas de acumulación de especies no alcanzan la asíntota quiere decir que se podría esperar aún más diversidad de la encontrada en el sitio.
+,
+11,La rarefacción nos permite reducir el efecto de la densidad de especies sobre el establecimiento de la riqueza observada en un determinado sitio.
+17,Si las curvas de acumulación de especies no alcanzan la asíntota puede utilizarse rarefacción para determinar la riqueza de especies de una o varias comunidades.
+20,"La rarefacción implica construir una curva de acumulación de especies mediante un remuestreo al azar de los datos, y usando un tamaño de muestra menor al total de muestras totales."
+3,La riqueza esperada de especies en un determinado sitio puede ser calculada como un índice.
+18,"Cuando se utilizan curvas de acumulación se espera que, conforme se incrementa el esfuerzo de muestreo, se va haciendo cada vez menos frecuente registrar la presencia de una especie nueva, por lo que la pendiente de la curva decrece."
+15,"Si dos localidades con la misma riqueza de especies difieren en sus abundancias o en la facilidad con que pueden encontrarse los individuos, un mismo esfuerzo de muestreo podrá resultar en valores distintos de riqueza observada."
+12,"Los cambios de la riqueza entre sitios pueden ser comparados directamente, solo es necesario asegurarnos de tener la misma cantidad de muestras, la cantidad de individuos no tienen un efecto sobre este cálculo."
+4,"La densidad de especies es el número de especies por unidad de área, es una forma alternativa de llamar a la riqueza."
+19,La rarefacción calcula el número de especies esperadas en el caso de que todas las muestras tuviesen el mismo número de individuos capturados.
+22,Las curvas de rarefacción pueden construirse en base a dos variables; número de muestras o número de individuos.
+,
+6,La riqueza de especies y la densidad de especies son medidas distintas de la cantidad de especies.
+2,Cuando proyectamos la posible cantidad de especies en un determinado lugar estamos hablando de riqueza observada de especies.
+14,"Cuando decimos que la curva de acumulación ha alcanzada la asíntota, queremos decir que la riqueza de especies se ha saturado, es decir, se ha alcanzado la riqueza máxima de especies."
+9,La probabilidad de encontrar más especies dentro de una comunidad está directamente relacionada con la cantidad de individuos que puedo encontrar en las muestras.
+7,Cuando tengo un incremento en el área muestreal es esperable que la cantidad de especies se incremente.
+3,La riqueza esperada de especies en un determinado sitio puede ser calculada como un índice.
+1,Riqueza de la comunidad se refiere a la cantidad de especies que existen en un determinado lugar.
+11,La rarefacción nos permite reducir el efecto de la densidad de especies sobre el establecimiento de la riqueza observada en un determinado sitio.
+10,La rarefacción es una forma de evaluar las diferencias en riqueza entre sitios y reducir los efectos de diferente tamaño de muestras y/o individuos.
+5,La riqueza de especies se refiere a la cantidad de especies por unidad de área.
+,
+12,"Los cambios de la riqueza entre sitios pueden ser comparados directamente, solo es necesario asegurarnos de tener la misma cantidad de muestras, la cantidad de individuos no tienen un efecto sobre este cálculo."
+22,Las curvas de rarefacción pueden construirse en base a dos variables; número de muestras o número de individuos.
+1,Riqueza de la comunidad se refiere a la cantidad de especies que existen en un determinado lugar.
+19,La rarefacción calcula el número de especies esperadas en el caso de que todas las muestras tuviesen el mismo número de individuos capturados.
+15,"Si dos localidades con la misma riqueza de especies difieren en sus abundancias o en la facilidad con que pueden encontrarse los individuos, un mismo esfuerzo de muestreo podrá resultar en valores distintos de riqueza observada."
+7,Cuando tengo un incremento en el área muestreal es esperable que la cantidad de especies se incremente.
+10,La rarefacción es una forma de evaluar las diferencias en riqueza entre sitios y reducir los efectos de diferente tamaño de muestras y/o individuos.
+21,La rarefacción parte del supuesto de que todos los individuos tienen la misma probabilidad de ser capturados en el área de estudio.
+6,La riqueza de especies y la densidad de especies son medidas distintas de la cantidad de especies.
+20,"La rarefacción implica construir una curva de acumulación de especies mediante un remuestreo al azar de los datos, y usando un tamaño de muestra menor al total de muestras totales."
+,
+14,"Cuando decimos que la curva de acumulación ha alcanzada la asíntota, queremos decir que la riqueza de especies se ha saturado, es decir, se ha alcanzado la riqueza máxima de especies."
+7,Cuando tengo un incremento en el área muestreal es esperable que la cantidad de especies se incremente.
+2,Cuando proyectamos la posible cantidad de especies en un determinado lugar estamos hablando de riqueza observada de especies.
+15,"Si dos localidades con la misma riqueza de especies difieren en sus abundancias o en la facilidad con que pueden encontrarse los individuos, un mismo esfuerzo de muestreo podrá resultar en valores distintos de riqueza observada."
+3,La riqueza esperada de especies en un determinado sitio puede ser calculada como un índice.
+12,"Los cambios de la riqueza entre sitios pueden ser comparados directamente, solo es necesario asegurarnos de tener la misma cantidad de muestras, la cantidad de individuos no tienen un efecto sobre este cálculo."
+20,"La rarefacción implica construir una curva de acumulación de especies mediante un remuestreo al azar de los datos, y usando un tamaño de muestra menor al total de muestras totales."
+18,"Cuando se utilizan curvas de acumulación se espera que, conforme se incrementa el esfuerzo de muestreo, se va haciendo cada vez menos frecuente registrar la presencia de una especie nueva, por lo que la pendiente de la curva decrece."
+9,La probabilidad de encontrar más especies dentro de una comunidad está directamente relacionada con la cantidad de individuos que puedo encontrar en las muestras.
+19,La rarefacción calcula el número de especies esperadas en el caso de que todas las muestras tuviesen el mismo número de individuos capturados.
+,
+5,La riqueza de especies se refiere a la cantidad de especies por unidad de área.
+6,La riqueza de especies y la densidad de especies son medidas distintas de la cantidad de especies.
+21,La rarefacción parte del supuesto de que todos los individuos tienen la misma probabilidad de ser capturados en el área de estudio.
+17,Si las curvas de acumulación de especies no alcanzan la asíntota puede utilizarse rarefacción para determinar la riqueza de especies de una o varias comunidades.
+10,La rarefacción es una forma de evaluar las diferencias en riqueza entre sitios y reducir los efectos de diferente tamaño de muestras y/o individuos.
+2,Cuando proyectamos la posible cantidad de especies en un determinado lugar estamos hablando de riqueza observada de especies.
+3,La riqueza esperada de especies en un determinado sitio puede ser calculada como un índice.
+16,Si las curvas de acumulación de especies no alcanzan la asíntota quiere decir que se podría esperar aún más diversidad de la encontrada en el sitio.
+15,"Si dos localidades con la misma riqueza de especies difieren en sus abundancias o en la facilidad con que pueden encontrarse los individuos, un mismo esfuerzo de muestreo podrá resultar en valores distintos de riqueza observada."
+8,"El incremento del área muestreal no tiene ningún efecto sobre el cálculo de la riqueza, pero si sobre la densidad de especies."
+,
+9,La probabilidad de encontrar más especies dentro de una comunidad está directamente relacionada con la cantidad de individuos que puedo encontrar en las muestras.
+18,"Cuando se utilizan curvas de acumulación se espera que, conforme se incrementa el esfuerzo de muestreo, se va haciendo cada vez menos frecuente registrar la presencia de una especie nueva, por lo que la pendiente de la curva decrece."
+22,Las curvas de rarefacción pueden construirse en base a dos variables; número de muestras o número de individuos.
+15,"Si dos localidades con la misma riqueza de especies difieren en sus abundancias o en la facilidad con que pueden encontrarse los individuos, un mismo esfuerzo de muestreo podrá resultar en valores distintos de riqueza observada."
+7,Cuando tengo un incremento en el área muestreal es esperable que la cantidad de especies se incremente.
+2,Cuando proyectamos la posible cantidad de especies en un determinado lugar estamos hablando de riqueza observada de especies.
+3,La riqueza esperada de especies en un determinado sitio puede ser calculada como un índice.
+4,"La densidad de especies es el número de especies por unidad de área, es una forma alternativa de llamar a la riqueza."
+14,"Cuando decimos que la curva de acumulación ha alcanzada la asíntota, queremos decir que la riqueza de especies se ha saturado, es decir, se ha alcanzado la riqueza máxima de especies."
+21,La rarefacción parte del supuesto de que todos los individuos tienen la misma probabilidad de ser capturados en el área de estudio.
+,
+1,Riqueza de la comunidad se refiere a la cantidad de especies que existen en un determinado lugar.
+14,"Cuando decimos que la curva de acumulación ha alcanzada la asíntota, queremos decir que la riqueza de especies se ha saturado, es decir, se ha alcanzado la riqueza máxima de especies."
+10,La rarefacción es una forma de evaluar las diferencias en riqueza entre sitios y reducir los efectos de diferente tamaño de muestras y/o individuos.
+8,"El incremento del área muestreal no tiene ningún efecto sobre el cálculo de la riqueza, pero si sobre la densidad de especies."
+4,"La densidad de especies es el número de especies por unidad de área, es una forma alternativa de llamar a la riqueza."
+3,La riqueza esperada de especies en un determinado sitio puede ser calculada como un índice.
+13,Las curvas de acumulación muestran el número de especies acumuladas conforme se va aumentando el esfuerzo de muestreo en un sitio.
+16,Si las curvas de acumulación de especies no alcanzan la asíntota quiere decir que se podría esperar aún más diversidad de la encontrada en el sitio.
+11,La rarefacción nos permite reducir el efecto de la densidad de especies sobre el establecimiento de la riqueza observada en un determinado sitio.
+21,La rarefacción parte del supuesto de que todos los individuos tienen la misma probabilidad de ser capturados en el área de estudio.
+,
+14,"Cuando decimos que la curva de acumulación ha alcanzada la asíntota, queremos decir que la riqueza de especies se ha saturado, es decir, se ha alcanzado la riqueza máxima de especies."
+18,"Cuando se utilizan curvas de acumulación se espera que, conforme se incrementa el esfuerzo de muestreo, se va haciendo cada vez menos frecuente registrar la presencia de una especie nueva, por lo que la pendiente de la curva decrece."
+1,Riqueza de la comunidad se refiere a la cantidad de especies que existen en un determinado lugar.
+8,"El incremento del área muestreal no tiene ningún efecto sobre el cálculo de la riqueza, pero si sobre la densidad de especies."
+12,"Los cambios de la riqueza entre sitios pueden ser comparados directamente, solo es necesario asegurarnos de tener la misma cantidad de muestras, la cantidad de individuos no tienen un efecto sobre este cálculo."
+5,La riqueza de especies se refiere a la cantidad de especies por unidad de área.
+7,Cuando tengo un incremento en el área muestreal es esperable que la cantidad de especies se incremente.
+17,Si las curvas de acumulación de especies no alcanzan la asíntota puede utilizarse rarefacción para determinar la riqueza de especies de una o varias comunidades.
+19,La rarefacción calcula el número de especies esperadas en el caso de que todas las muestras tuviesen el mismo número de individuos capturados.
+22,Las curvas de rarefacción pueden construirse en base a dos variables; número de muestras o número de individuos.
+,
+1035,1035
+1036,1036
+1037,1037
+1038,1038
+1039,1039
+1040,1040
+1041,1041
+1042,1042
+1043,1043
+1044,1044

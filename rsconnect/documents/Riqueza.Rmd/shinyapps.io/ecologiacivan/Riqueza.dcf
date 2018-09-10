@@ -1,0 +1,12 @@
+name: Riqueza
+title: Riqueza
+username:
+account: ecologiacivan
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 230933
+bundleId: 1055018
+url: https://ecologiacivan.shinyapps.io/Riqueza/
+when: 1509551343.92952
+asMultiple: FALSE
+asStatic: FALSE

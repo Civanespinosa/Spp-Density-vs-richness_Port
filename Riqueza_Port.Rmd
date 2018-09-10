@@ -1,0 +1,995 @@
+---
+title: 'Diversidade alfa: Densidade de espécies versus riqueza total'
+author: "Carlos Ivan Espinosa"
+date: "outubro de 2017"
+output:
+    html_notebook:
+    fig_caption: yes
+    number_sections: yes
+    toc: yes
+runtime: shiny
+  
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+# Generalidades
+
+A riqueza de espécies é o número de espécies presente numa localidade demarcada em um espaço e tempos determinados. Muitos autores acham que a riqueza é a forma mais fácil e clara para medir a diversidade (Sarkar, 2002; Magurran, 2004). No entanto, a medição da riqueza de uma forma precisa não é um trabalho simples (Magurran, 2004), principalmente porque o número de espécies observadas muda com o esforço amostral, ou seja, quanto maior seja o número de amostras utilizadas, maior será a probabilidade de encontrar mais espécies. De modo que a comparação da riqueza entre duas comunidades é melhor com inventários completos; no entanto, fazer inventários completos é pouco prático e muitas vezes complicado (Gonzalez-Oreja et al. 2010). No presente exercício estudaremos as diferenças entre densidade de espécies e riqueza total entre dois sítios e avaliaremos a importância da amostragem em estudos de riqueza de espécies.
+
+O exercício está dividido em duas partes; a primeira parte é uma demo que permitirá entender o impacto da amostragem sobre o cálculo da riqueza (a relação espécies – área, ou espécies - número de indivíduos). Na segunda parte, desenvolveremos um exercício prático no qual avaliaremos o efeito da estação sobre a riqueza de aves numa floresta tropical seca.
+
+# Demo: Medição da riqueza
+
+Aparentemente, a medição da riqueza de espécies é um trabalho simples, unicamente precisamos contar o número de espécies em nossa área de estudo. Infelizmente, isso não é tão simples assim, a riqueza pode ser alterada pelo esforço amostral e o número de indivíduos; estes dois fatores podem gerar enviesamentos em nossas medidas de riqueza.
+
+##Primeiro passo: _as comunidades_
+
+A seguir, vamos gerar uns dados que vão simular duas comunidades diferentes, a primeira será uma comunidade intocada e a segunda uma comunidade impactada pelo pastoreio. A comunidade intocada terá sempre uma densidade de indivíduos maior do que a comunidade impactada. Quando as comunidades são geradas, nós comparamos a riqueza de espécies das duas comunidades. Enquanto ecologistas, temos interesse em avaliar se o pastoreio tem repercussões na riqueza de espécies deste ecossistema.
+As comunidades serão construídas com base em duas variáveis: elevação e umidade. Geramos uma superfície de elevação e outra de umidade, sobre as quais umas espécies de plantas estarão distribuídas com uma relação positiva em relação à elevação e em outras espécies em relação à umidade. Estas relações serão iguais entre comunidades.	
+No gráfico seguinte, vocês podem verificar a distribuição de indivíduos e espécies na superfície de elevação e umidade nas duas comunidades. Cada forma e cor de ponto representa uma espécie diferente.
+
+```{r, fig.cap="Riqueza", warning=FALSE, message=FALSE}
+library(shiny)
+library(shinythemes)
+# Define UI for application that draws a histogram
+ui <- shinyUI(fluidPage(theme = shinytheme("sandstone"),
+     
+    # Application title
+   titlePanel("Comunidade de plantas"),
+   
+   # Sidebar with a slider input for number of bins 
+   fluidRow(style = "padding-bottom: 20px;",
+
+         column(4, selectInput("bins", label = "Density:",
+                             choices =c(50, 100, 200) , 
+                             selected = 50))
+      ),
+      
+      # Show a plot of the generated distribution
+      mainPanel(
+         plotOutput("distPlot")
+      )
+   )
+)
+
+# Define server logic required to draw a histogram
+server <- shinyServer(function(input, output) {
+   
+   output$distPlot <- renderPlot({
+      # generate bins based on as.numeric(input$bins) from ui.R
+     library(spatstat)
+     library(raster)
+     library(vegan) 
+     
+     ########## sub-sampling plots in spp ###############
+     ######################################
+     ventana <- function(pp,size){
+       punto<-rpoint(1,win=c((pp$window$xrange)-c(-15,15),
+                             (pp$window$yrange)-c(-15,15)))
+       x<- punto$x
+       y<- punto$y
+       s2<-size/2
+       return(owin(c(x-s2, x+s2), c(y-s2, y+s2)))
+     }
+     ############################################
+     
+     xrange=c(0, 500)
+     yrange=c(0, 500)
+     window<-owin(xrange, yrange)
+     
+     # Build maps from random points ----
+     set.seed(25)
+     elev   <- density(rpoispp(lambda=0.05, win=window)) #
+     elev <- elev*2000
+     set.seed(3)
+     hum <- density(rpoispp(lambda=0.05, win=window))
+     
+     sppE_d <- rpoint(as.numeric(input$bins), elev) 
+     sppH_d <- rpoint(as.numeric(input$bins), hum)
+     
+     sppE_nd <- rpoint(as.numeric(input$bins)*2.5, elev) 
+     sppH_nd <- rpoint(as.numeric(input$bins)*2.5, hum)
+     
+     
+     ##Ensamble of communities----
+     
+     ###Disturbed ----
+     xE_d <- sppE_d$x
+     yE_d <- sppE_d$y
+     NsppE_d <- c(sample(paste("sp", 1:20, sep=""), as.numeric(input$bins)*0.16, replace=T),
+                            sample(paste("sp", 21:30, sep=""), as.numeric(input$bins)*0.84, replace=T), 
+                            sample(paste("sp", 21:30, sep=""),as.numeric(input$bins)-length(c(sample(paste("sp", 1:20, sep=""), as.numeric(input$bins)*0.16, replace=T),
+                            sample(paste("sp", 21:30, sep=""), as.numeric(input$bins)*0.84, replace=T)))))
+
+    NsppE_d[1:30] <- paste("sp", 1:30, sep="")
+    NsppE_d <- as.factor(NsppE_d) 
+    
+      ComE_d <- ppp(x=xE_d,y=yE_d, marks= NsppE_d, 
+                 window=window) 
+    
+     xH_d <- sppH_d$x
+     yH_d <- sppH_d$y
+     NsppH_d <- c(sample(paste("sp", 31:40, sep=""), as.numeric(input$bins)*0.08, replace=T), 
+                            sample(paste("sp", 41:50, sep=""), as.numeric(input$bins)*0.92, replace=T), 
+                            sample(paste("sp", 31:40, sep=""),as.numeric(input$bins)-length(c(sample(paste("sp", 31:40, sep=""),as.numeric(input$bins)*0.08, replace=T), sample(paste("sp", 41:50, sep=""), as.numeric(input$bins)*0.92, replace=T)))))
+     
+     NsppH_d[1:20] <- paste("sp", 31:50, sep="")
+     NsppH_d <- as.factor(NsppH_d)
+     
+     
+     ComH_d <- ppp(x=xH_d,y=yH_d, marks= NsppH_d, 
+                   window=window) 
+     ComEH_d<-superimpose(ComE_d,ComH_d)
+     
+     
+     ###Undisturbed ----
+     xE_nd <- sppE_nd$x
+     yE_nd <- sppE_nd$y
+     NsppE_nd <- c(sample(paste("sp", 1:20, sep=""), (2.5*as.numeric(input$bins))*0.16, replace=T),
+                            sample(paste("sp", 21:30, sep=""), (2.5*as.numeric(input$bins))*0.84, replace=T), 
+                            sample(paste("sp", 21:30, sep=""),2.5*as.numeric(input$bins)-length(c(sample(paste("sp", 1:20, sep=""), (2.5*as.numeric(input$bins))*0.16, replace=T), sample(paste("sp", 21:30, sep=""), (2.5*as.numeric(input$bins))*0.84, replace=T)))))
+
+     NsppE_nd[1:30] <- paste("sp", 1:30, sep="")
+     NsppE_nd <- as.factor(NsppE_nd)     
+     ComE_nd <- ppp(x=xE_nd,y=yE_nd, marks= NsppE_nd, 
+                   window=window) 
+     
+     xH_nd <- sppH_nd$x
+     yH_nd <- sppH_nd$y
+     NsppH_nd <- c(sample(paste("sp", 31:40, sep=""), as.numeric(input$bins)*0.08*2.5, replace=T), 
+                            sample(paste("sp", 41:50, sep=""), as.numeric(input$bins)*0.92*2.5, replace=T), 
+                            sample(paste("sp", 31:40, sep=""),2.5*as.numeric(input$bins)-length(c(sample(paste("sp", 31:40, sep=""),as.numeric(input$bins)*0.08*2.5, replace=T), 
+     sample(paste("sp", 41:50, sep=""), as.numeric(input$bins)*0.92*2.5, replace=T)))))
+     
+     NsppH_nd[1:20] <- paste("sp", 31:50, sep="")
+     NsppH_nd <- as.factor(NsppH_nd)
+       
+       
+     ComH_nd <- ppp(x=xH_nd,y=yH_nd, marks= NsppH_nd, 
+                   window=window) 
+     ComEH_nd<-superimpose(ComE_nd,ComH_nd)
+     
+      
+      par(mfcol= c(2,2), mar=c(2,2,1,1), oma=c(0.5,0.5,1.5,0))
+      
+      plot(ComE_d$x, ComE_d$y, pch=c(21:25), bg=as.numeric(ComE_d$marks), cex=0.8, yaxt="n", xaxt="n")
+      plot(elev, col=heat.colors(5), add=T)
+      points(ComE_d$x, ComE_d$y, pch=c(21:25), 
+             bg=as.numeric(ComE_d$marks), col="black", cex=0.9)
+mtext("Comunidade impactada", side=3, cex=1.2, line =1.5, font =2, adj=0)
+mtext("a. Distribuição de espécies em superfície de elevação", side=3, cex=1, line =0.2, adj=0)
+      
+      plot(ComH_d$x, ComH_d$y, pch=c(21:25), bg=as.numeric(ComH_d$marks), cex=0.8, yaxt="n", xaxt="n")
+      plot(hum, col=terrain.colors(5), add=T)
+      points(ComH_d$x, ComH_d$y, pch=c(21:25), 
+             bg=as.numeric(ComE_d$marks), col="black", cex=0.9)
+mtext("b. Distribuição de espécies na superfície de umidade", side=3, cex=1, line =0.2, adj=0)
+
+    
+    plot(ComE_nd$x, ComE_nd$y, pch=c(21:25), bg=as.numeric(ComE_nd$marks), cex=0.8, yaxt="n", xaxt="n")
+      plot(elev, col=heat.colors(5), add=T)
+      points(ComE_nd, pch=c(21:25), 
+             bg=as.numeric(ComE_nd$marks),col="black", cex=0.9)
+mtext("Comunidade intocada", side=3, cex=1.2, line =1.5, font =2, adj=0)
+mtext("c. Distribuição de espécies em superfície de elevação", side=3, cex=1, line =0.2, adj=0)
+
+      plot(ComH_nd$x, ComH_nd$y, pch=c(21:25), bg=as.numeric(ComH_nd$marks), cex=0.8, yaxt="n", xaxt="n")
+      plot(hum, col=terrain.colors(5), add=T)
+      points(ComH_nd, pch=c(21:25), 
+             bg=as.numeric(ComH_nd$marks),col="black", cex=0.9)
+mtext("d. Distribuição de espécies na superfície de umidade", side=3, cex=1, line =0.2, adj=0)
+            # draw the histogram with the specified number of bins
+       }, height = 500, width = 600)
+})
+
+# Run the application 
+shinyApp(ui = ui, server = server, options = list(height = 700))
+
+```
+
+##Riqueza:  _esforço amostral e densidade_
+
+Agora que temos as nossas comunidades, precisamos fazer a amostragem e medir a riqueza de espécies. No gráfico seguinte, vocês podem mudar o esforço amostral e a densidade de indivíduos na comunidade. No gráfico, cada amostra está representada por um quadrado preto. Como podem ver, o esforço amostral mais baixo no exemplo é dois, é por isso que em cada comunidade aparecem duas parcelas (quadrados pretos).
+Observem como as barras pretas, que sinalizam a riqueza de espécies, variam ao modificar o esforço amostral. Agora, podemos modificar o esforço amostral com uma densidade de indivíduos maior. Por favor, incrementem a densidade de indivíduos e observem as mudanças na riqueza.
+
+Levem em conta que no exercício não está sendo modificada a riqueza de espécies em comunidade nenhuma, o único que estamos mudando é a densidade de indivíduos e o esforço amostral, enquanto o número total de espécies se mantém constante.	O que aconteceu quando aumentamos o esforço amostral? O que aconteceu com o cálculo da riqueza quando aumentamos a densidade de indivíduos?	Qual é a conclusão sobre o efeito do pastoreio sobre a riqueza desse ecossistema?
+
+
+```{r }
+library(shiny)
+library(shinythemes)
+# Define UI for application that draws a histogram
+ui <- shinyUI(fluidPage(theme = shinytheme("sandstone"),
+     
+    # Application title
+   titlePanel("Riqueza de espécies"),
+   
+   # Sidebar with a slider input for number of bins 
+   fluidRow(style = "padding-bottom: 20px;",
+column(4, sliderInput("k",
+                     "Esforço de amostragem:",
+                     min = 2,
+                     max = 50,
+                     value = 0)),
+         column(4, selectInput("bins", label = "Densidad de indivíduos:",
+                             choices =c( 50, 100, 200, 500) , 
+                             selected = 50)),
+           column(4, checkboxInput(inputId = "Total",
+            label = strong("Mostrar riqueza total"),
+            value = FALSE))
+      ),
+      
+      # Show a plot of the generated distribution
+      mainPanel(
+         plotOutput("distPlot")
+      )
+   )
+)
+
+# Define server logic required to draw a histogram
+server <- shinyServer(function(input, output) {
+   
+   output$distPlot <- renderPlot({
+      # generate bins based on as.numeric(input$bins) from ui.R
+     library(spatstat)
+     library(raster)
+     library(vegan) 
+     
+     ########## sub-sampling plots in spp ###############
+     ######################################
+     ventana <- function(pp,size){
+       punto<-rpoint(1,win=c((pp$window$xrange)-c(-15,15),
+                             (pp$window$yrange)-c(-15,15)))
+       x<- punto$x
+       y<- punto$y
+       s2<-size/2
+       return(owin(c(x-s2, x+s2), c(y-s2, y+s2)))
+     }
+     ############################################
+     
+     xrange=c(0, 500)
+     yrange=c(0, 500)
+     window<-owin(xrange, yrange)
+     
+     # Build maps from random points ----
+     set.seed(25)
+     elev   <- density(rpoispp(lambda=0.05, win=window)) #
+     elev <- elev*2000
+     set.seed(3)
+     hum <- density(rpoispp(lambda=0.05, win=window))
+     
+     sppE_d <- rpoint(as.numeric(input$bins), elev) 
+     sppH_d <- rpoint(as.numeric(input$bins), hum)
+     
+     sppE_nd <- rpoint(as.numeric(input$bins)*2.5, elev) 
+     sppH_nd <- rpoint(as.numeric(input$bins)*2.5, hum)
+     
+     
+     ##Ensamble of communities----
+     
+     ###Disturbed ----
+     xE_d <- sppE_d$x
+     yE_d <- sppE_d$y
+     NsppE_d <- c(sample(paste("sp", 1:20, sep=""), as.numeric(input$bins)*0.16, replace=T),
+                            sample(paste("sp", 21:30, sep=""), as.numeric(input$bins)*0.84, replace=T), 
+                            sample(paste("sp", 21:30, sep=""),as.numeric(input$bins)-length(c(sample(paste("sp", 1:20, sep=""), as.numeric(input$bins)*0.16, replace=T),
+                            sample(paste("sp", 21:30, sep=""), as.numeric(input$bins)*0.84, replace=T)))))
+
+    NsppE_d[1:30] <- paste("sp", 1:30, sep="")
+    NsppE_d <- as.factor(NsppE_d) 
+    
+      ComE_d <- ppp(x=xE_d,y=yE_d, marks= NsppE_d, 
+                 window=window) 
+    
+     xH_d <- sppH_d$x
+     yH_d <- sppH_d$y
+     NsppH_d <- c(sample(paste("sp", 31:40, sep=""), as.numeric(input$bins)*0.08, replace=T), 
+                            sample(paste("sp", 41:50, sep=""), as.numeric(input$bins)*0.92, replace=T), 
+                            sample(paste("sp", 31:40, sep=""),as.numeric(input$bins)-length(c(sample(paste("sp", 31:40, sep=""),as.numeric(input$bins)*0.08, replace=T), sample(paste("sp", 41:50, sep=""), as.numeric(input$bins)*0.92, replace=T)))))
+     
+     NsppH_d[1:20] <- paste("sp", 31:50, sep="")
+     NsppH_d <- as.factor(NsppH_d)
+     
+     
+     ComH_d <- ppp(x=xH_d,y=yH_d, marks= NsppH_d, 
+                   window=window) 
+     ComEH_d<-superimpose(ComE_d,ComH_d)
+     
+     
+     ###Undisturbed ----
+     xE_nd <- sppE_nd$x
+     yE_nd <- sppE_nd$y
+     NsppE_nd <- c(sample(paste("sp", 1:20, sep=""), (2.5*as.numeric(input$bins))*0.16, replace=T),
+                            sample(paste("sp", 21:30, sep=""), (2.5*as.numeric(input$bins))*0.84, replace=T), 
+                            sample(paste("sp", 21:30, sep=""),2.5*as.numeric(input$bins)-length(c(sample(paste("sp", 1:20, sep=""), (2.5*as.numeric(input$bins))*0.16, replace=T), sample(paste("sp", 21:30, sep=""), (2.5*as.numeric(input$bins))*0.84, replace=T)))))
+
+     NsppE_nd[1:30] <- paste("sp", 1:30, sep="")
+     NsppE_nd <- as.factor(NsppE_nd)     
+     ComE_nd <- ppp(x=xE_nd,y=yE_nd, marks= NsppE_nd, 
+                   window=window) 
+     
+     xH_nd <- sppH_nd$x
+     yH_nd <- sppH_nd$y
+     NsppH_nd <- c(sample(paste("sp", 31:40, sep=""), as.numeric(input$bins)*0.08*2.5, replace=T), 
+                            sample(paste("sp", 41:50, sep=""), as.numeric(input$bins)*0.92*2.5, replace=T), 
+                            sample(paste("sp", 31:40, sep=""),2.5*as.numeric(input$bins)-length(c(sample(paste("sp", 31:40, sep=""),as.numeric(input$bins)*0.08*2.5, replace=T), 
+     sample(paste("sp", 41:50, sep=""), as.numeric(input$bins)*0.92*2.5, replace=T)))))
+     
+     NsppH_nd[1:20] <- paste("sp", 31:50, sep="")
+     NsppH_nd <- as.factor(NsppH_nd)
+       
+       
+     ComH_nd <- ppp(x=xH_nd,y=yH_nd, marks= NsppH_nd, 
+                   window=window) 
+     ComEH_nd<-superimpose(ComE_nd,ComH_nd)
+     
+     ##Hacemos el muestreo de las comunidades----
+     
+      k <- input$k
+      
+      unif.sample_d<- vector(mode = "list", length= k)
+      
+      for (i in 1:k){
+        unif.sample_d[[i]]<-ComEH_d[ventana(ComEH_d, 30)]
+      }
+      
+      unif.sample_nd<- vector(mode = "list", length= k)
+      
+      for (i in 1:k){
+        unif.sample_nd[[i]]<-ComEH_nd[ventana(ComEH_nd, 30)]
+      }
+      
+      ###Calculamos la riqueza----
+      
+      ##Riqueza disturbada
+      richness_d <- matrix(NA,k+1,specnumber(table(ComEH_d$marks)))
+      colnames(richness_d) <- levels(ComEH_d$marks)
+      
+      for (i in 1:k) {
+        richness_d[i,] <- table(unif.sample_d[[i]]$marks)
+      }
+      richness_d[nrow(richness_d),] <- table(ComEH_d$marks)
+      
+      ##Riqueza no disturbada
+      
+      richness_nd <- matrix(NA,k+1,specnumber(table(ComEH_nd$marks)))
+      colnames(richness_nd) <- levels(ComEH_nd$marks)
+      
+      for (i in 1:k) {
+        richness_nd[i,] <- table(unif.sample_nd[[i]]$marks)
+      }
+     richness_nd[nrow(richness_nd),] <- table(ComEH_nd$marks)
+      
+      
+      ###Graficamos las comunidades -----
+      
+      par(mfcol= c(1,3), mar=c(2,2,2.5,1))
+      
+      plot(ComEH_d$x, ComEH_d$y, pch=c(21:25), bg=as.numeric(ComEH_d$marks), cex=0.8, yaxt="n", xaxt="n")
+      plot(elev, col=grey.colors(5), add=T)
+      points(ComEH_d$x, ComEH_d$y, pch=c(21:25), 
+             bg=as.numeric(ComEH_d$marks), col=as.numeric(ComEH_d$marks), cex=0.9)
+      mtext("Comunidad con pastoreo", side=3, cex=1.2, line =0.5, font =2, adj=0)
+            for (i in 1:k){
+      plot(unif.sample_d[[i]]$window, add=T, lwd=1)
+      }
+      
+      barplot(c(specnumber(colSums(richness_d[1:k,])),
+               specnumber(colSums(richness_nd[1:k,]))), ylim=c(0,55), 
+              las=2, col="grey20", border="white")
+      mtext("Riqueza de especies", side=3, cex=1.2, line =0.5, font =2, adj=0)
+      if (input$Total) {
+            points(c(0.7,1.9), c(specnumber(richness_d[k+1,]), specnumber(richness_nd[k+1,])),
+                    pch=19, col = "red", cex=2.5)
+    }
+      
+      plot(ComEH_nd$x, ComEH_nd$y, pch=c(21:25), bg=as.numeric(ComEH_nd$marks), cex=0.8, yaxt="n", xaxt="n")
+      plot(elev, col=grey.colors(5), add=T)
+      points(ComEH_nd, pch=c(21:25), 
+             bg=as.numeric(ComEH_nd$marks),col=as.numeric(ComEH_nd$marks), cex=0.9)
+      mtext("Comunidad Prístina", side=3, cex=1.2, line =0.5, font =2, adj=0)
+      for (i in 1:k){
+        plot(unif.sample_d[[i]]$window, add=T, lwd=1)
+      }
+      
+
+      # draw the histogram with the specified number of bins
+       }, height = 300, width = 800)
+})
+
+# Run the application 
+shinyApp(ui = ui, server = server, options = list(height = 600))
+
+```
+
+Efetivamente, a riqueza na comunidade com pastoreio sempre foi mais baixa do que na comunidade intocada. Nossa conclusão é que o pastoreio tem impacto na riqueza total de espécies nesse sítio. Já que nós mesmos temos construído as comunidades, podemos verificar a real riqueza que têm.
+Por favor, selecione a caixa de “__exibir riqueza total__” no gráfico prévio. Ao fazer isso, o valor da real riqueza de espécies vai aparecer com um ponto vermelho no gráfico de riqueza.
+O que aconteceu? A riqueza total é a mesma nas duas comunidades, a diferença entre essas comunidades não é a riqueza, é a densidade de espécies (o número total de indivíduos presentes na comunidade).
+Este é um dos problemas mais comuns quando trabalhamos com comunidades naturais, porque embora definamos uma mesma unidade de amostragem para todos os sítios, não podemos controlar que o número de indivíduos presentes em cada um seja o mesmo.
+
+Neste ponto é importante distinguir a riqueza real e a riqueza observada. A forma de obter a riqueza real de uma comunidade é fazendo um censo; no entanto, já vimos que isso é um trabalho complicado demais na maioria das comunidades. A riqueza observada, por outro lado, é a riqueza que obtemos ao extrair uma amostra da comunidade, por conseguinte, essa riqueza observada nem sempre coincide com a riqueza real. O que se espera é que se aumentarmos o número de amostras, vamos nos aproximar mais da riqueza real. Esta relação pode se observar construindo uma curva de acumulação, como a que é apresentada a seguir.
+
+Como podemos perceber, as curvas de acumulação apresentam a taxa na qual aparecem novas espécies, dessa forma, oferecem informação sobre o esforço amostral que é necessário para obter uma boa estimativa da riqueza de espécies.
+
+
+## A solução: _rarefação_
+
+Otro punto interesante que podemos ver en este ejercicio es que la riqueza de especies incrementa con el esfuerzo de muestreo, aunque la riqueza total siempre es la misma. 
+La rarefacción interpola nuestros datos y encuentra una riqueza media y su desviación estándar en un tamaño de muestra específico (que será menor al total de nuestras muestras). La riqueza media es calculada aleatorizando el orden de aparición de cada muestra y repitiendo esto muchas veces.
+La curva de rarefacción nos muestra el incremento de la riqueza media en función del número de muestras. 
+En el siguiente gráfico podremos jugar con los valores de nuestros dos factores (esfuerzo de muestreo y densidad) y construir la curva rarefacción basada en muestras. La curva muestra la riqueza media y los segmentos muestran la desviación estándar. Observen la curva y la riqueza en el eje “y”.
+
+```{r}
+library(shiny)
+library(shinythemes)
+# Define UI for application that draws a histogram
+ui <- shinyUI(fluidPage(theme = shinytheme("sandstone"),
+     
+    # Application title
+   titlePanel("Rarefação / Amostras"),
+   
+   # Sidebar with a slider input for number of bins 
+   fluidRow(style = "padding-bottom: 20px;",
+column(4, sliderInput("k",
+                     "Esforço de amostragem:",
+                     min = 5,
+                     max = 100,
+                     value = 5)),
+         column(4, selectInput("bins", label = "Densidade de indivíduos:",
+                             choices =c( 50, 100, 500, 1000) , 
+                             selected = 50))
+      ),
+      
+      # Show a plot of the generated distribution
+      mainPanel(
+         plotOutput("distPlot")
+      )
+   )
+)
+
+# Define server logic required to draw a histogram
+server <- shinyServer(function(input, output) {
+   
+   output$distPlot <- renderPlot({
+      # generate bins based on as.numeric(input$bins) from ui.R
+     library(spatstat)
+     library(raster)
+     library(vegan) 
+     
+     ########## sub-sampling plots in spp ###############
+     ######################################
+     ventana <- function(pp,size){
+       punto<-rpoint(1,win=c((pp$window$xrange)-c(-15,15),
+                             (pp$window$yrange)-c(-15,15)))
+       x<- punto$x
+       y<- punto$y
+       s2<-size/2
+       return(owin(c(x-s2, x+s2), c(y-s2, y+s2)))
+     }
+     ############################################
+     
+     xrange=c(0, 500)
+     yrange=c(0, 500)
+     window<-owin(xrange, yrange)
+     
+     # Build maps from random points ----
+     set.seed(25)
+     elev   <- density(rpoispp(lambda=0.05, win=window)) #
+     elev <- elev*2000
+     set.seed(3)
+     hum <- density(rpoispp(lambda=0.05, win=window))
+     
+     sppE_d <- rpoint(as.numeric(input$bins), elev) 
+     sppH_d <- rpoint(as.numeric(input$bins), hum)
+     
+     sppE_nd <- rpoint(as.numeric(input$bins)*2.5, elev) 
+     sppH_nd <- rpoint(as.numeric(input$bins)*2.5, hum)
+     
+     
+     ##Ensamble of communities----
+     
+     ###Disturbed ----
+     xE_d <- sppE_d$x
+     yE_d <- sppE_d$y
+     NsppE_d <- c(sample(paste("sp", 1:20, sep=""), as.numeric(input$bins)*0.16, replace=T),
+                            sample(paste("sp", 21:30, sep=""), as.numeric(input$bins)*0.84, replace=T), 
+                            sample(paste("sp", 21:30, sep=""),as.numeric(input$bins)-length(c(sample(paste("sp", 1:20, sep=""), as.numeric(input$bins)*0.16, replace=T),
+                            sample(paste("sp", 21:30, sep=""), as.numeric(input$bins)*0.84, replace=T)))))
+
+    NsppE_d[1:30] <- paste("sp", 1:30, sep="")
+    NsppE_d <- as.factor(NsppE_d) 
+    
+      ComE_d <- ppp(x=xE_d,y=yE_d, marks= NsppE_d, 
+                 window=window) 
+    
+     xH_d <- sppH_d$x
+     yH_d <- sppH_d$y
+     NsppH_d <- c(sample(paste("sp", 31:40, sep=""), as.numeric(input$bins)*0.08, replace=T), 
+                            sample(paste("sp", 41:50, sep=""), as.numeric(input$bins)*0.92, replace=T), 
+                            sample(paste("sp", 31:40, sep=""),as.numeric(input$bins)-length(c(sample(paste("sp", 31:40, sep=""),as.numeric(input$bins)*0.08, replace=T), sample(paste("sp", 41:50, sep=""), as.numeric(input$bins)*0.92, replace=T)))))
+     
+     NsppH_d[1:20] <- paste("sp", 31:50, sep="")
+     NsppH_d <- as.factor(NsppH_d)
+     
+     
+     ComH_d <- ppp(x=xH_d,y=yH_d, marks= NsppH_d, 
+                   window=window) 
+     ComEH_d<-superimpose(ComE_d,ComH_d)
+     
+     
+     ###Undisturbed ----
+     xE_nd <- sppE_nd$x
+     yE_nd <- sppE_nd$y
+     NsppE_nd <- c(sample(paste("sp", 1:20, sep=""), (2.5*as.numeric(input$bins))*0.16, replace=T),
+                            sample(paste("sp", 21:30, sep=""), (2.5*as.numeric(input$bins))*0.84, replace=T), 
+                            sample(paste("sp", 21:30, sep=""),2.5*as.numeric(input$bins)-length(c(sample(paste("sp", 1:20, sep=""), (2.5*as.numeric(input$bins))*0.16, replace=T), sample(paste("sp", 21:30, sep=""), (2.5*as.numeric(input$bins))*0.84, replace=T)))))
+
+     NsppE_nd[1:30] <- paste("sp", 1:30, sep="")
+     NsppE_nd <- as.factor(NsppE_nd)     
+     ComE_nd <- ppp(x=xE_nd,y=yE_nd, marks= NsppE_nd, 
+                   window=window) 
+     
+     xH_nd <- sppH_nd$x
+     yH_nd <- sppH_nd$y
+     NsppH_nd <- c(sample(paste("sp", 31:40, sep=""), as.numeric(input$bins)*0.08*2.5, replace=T), 
+                            sample(paste("sp", 41:50, sep=""), as.numeric(input$bins)*0.92*2.5, replace=T), 
+                            sample(paste("sp", 31:40, sep=""),2.5*as.numeric(input$bins)-length(c(sample(paste("sp", 31:40, sep=""),as.numeric(input$bins)*0.08*2.5, replace=T), 
+     sample(paste("sp", 41:50, sep=""), as.numeric(input$bins)*0.92*2.5, replace=T)))))
+     
+     NsppH_nd[1:20] <- paste("sp", 31:50, sep="")
+     NsppH_nd <- as.factor(NsppH_nd)
+       
+       
+     ComH_nd <- ppp(x=xH_nd,y=yH_nd, marks= NsppH_nd, 
+                   window=window) 
+     ComEH_nd<-superimpose(ComE_nd,ComH_nd)
+     
+     ##Hacemos el muestreo de las comunidades----
+     
+      k <- input$k
+      
+      unif.sample_d<- vector(mode = "list", length= k)
+      
+      for (i in 1:k){
+        unif.sample_d[[i]]<-ComEH_d[ventana(ComEH_d, 30)]
+      }
+      
+      unif.sample_nd<- vector(mode = "list", length= k)
+      
+      for (i in 1:k){
+        unif.sample_nd[[i]]<-ComEH_nd[ventana(ComEH_nd, 30)]
+      }
+      
+      ###Calculamos la riqueza----
+      
+      ##Riqueza disturbada
+      richness_d <- matrix(NA,k,specnumber(table(ComEH_d$marks)))
+      colnames(richness_d) <- levels(ComEH_d$marks)
+      
+      for (i in 1:k) {
+        richness_d[i,] <- table(unif.sample_d[[i]]$marks)
+      }
+     
+      
+      ##Riqueza no disturbada
+      
+      richness_nd <- matrix(NA,k,specnumber(table(ComEH_nd$marks)))
+      colnames(richness_nd) <- levels(ComEH_nd$marks)
+      
+      for (i in 1:k) {
+        richness_nd[i,] <- table(unif.sample_nd[[i]]$marks)
+      }
+     
+      
+      
+      ###Graficamos las comunidades -----
+      
+      par(mar=c(3,3,2.5,1), mgp=c(2,0.4,0), tck=-0.02)
+      
+      
+rar_d <- specaccum(richness_d, method = "random", permutations=100)
+rar_nd <- specaccum(richness_nd, method = "random", permutations=100)
+
+x_rar <- 1:k
+      
+plot(x_rar, rar_d$richness, type="l", col="red", 
+     xlim=c(1,100), ylim = c(0, max(rar_nd$richness)+5), lwd=1.8, xlab="
+20/5000
+Esforço de amostragem", ylab="Número de espécies")
+points(rar_d$richness, pch=19, col="darkred")
+segments(x_rar, rar_d$richness + rar_d$sd, x_rar, rar_d$richness - rar_d$sd, col="red")
+lines(x_rar, rar_nd$richness, col="blue",ylab="", xlab="", lwd=1.8)
+points(rar_nd$richness, pch=19, col="darkblue")
+segments(x_rar, rar_nd$richness + rar_nd$sd, x_rar, rar_nd$richness - rar_nd$sd, col="blue")
+
+
+mtext("Rarefação baseada em amostras", side=3, cex=1.2, line =0.5, font =2, adj=0)
+     
+      
+ legend(70,max(rar_nd$richness)*0.35, c("Pastoreada", "Intocada"), lty=1, lwd = 1.2, col =c("darkred", "darkblue") )
+
+      # draw the histogram with the specified number of bins
+       }, height = 300, width = 500)
+})
+
+# Run the application 
+shinyApp(ui = ui, server = server, options = list(height = 600))
+
+```
+
+Há duas mensagens que podemos obter dos gráficos prévios. Primeira: quando
+aumentamos o esforço amostral, a estimativa da riqueza aumenta também. No entanto, a inclinação de cada curva é diferente; a curva da comunidade com pastoreio tem uma inclinação más baixa do que a curva da comunidade intocada. Segunda: a curva da comunidade intocada atingiu o máximo valor mais rápido e ficou saturada, ao passo que a comunidade com pastoreio não a atingiu o máximo valor. Finalmente, com o esforço amostral mais alto obtivemos a estimação de riqueza mais próxima da riqueza real.
+
+Porém essa rarefação é uma ajuda para saber se a riqueza está saturada (isto é, que é atingida a riqueza total), não temos resolvido o problema da densidade, ou seja, ainda temos mais densidade de indivíduos na comunidade intocada, e dessa forma, ainda existe a possibilidade de obter uma maior riqueza observada. Quando duas comunidades atingem a saturação de riqueza, é possível compará-las diretamente; no entanto, no mundo real é impossível atingir essa curva saturada. Por exemplo, nos trópicos da Costa Rica, Longino et al. (2002) não atingiu a saturação depois de 30 anos de estudo. Em 1998, Paxton estimou que, para alguns habitats afastados, 47 monstros marinhos (comprimento >2 m) ainda estavam para ser descobertos. Do mesmo modo, no exemplo que nós acabamos de fazer, nenhuma das comunidades ficou saturada.
+
+__O que fazemos?__
+
+No exemplo prévio, fizemos uma rarefação interpolando o número de amostras e
+obtivemos a riqueza esperada com diferente esforço amostral. Nós podemos utilizar o
+mesmo princípio, mas agora interpolamos os dados para números de indivíduos diferentes. A ideia desta abordagem é romper com a correlação entre indivíduos dentro das amostras.
+	As nossas duas comunidades com o mesmo esforço amostral (número de parcelas) têm diferente número de indivíduos e, como sabemos, a densidade pode alterar a riqueza.
+	Construímos novamente uma curva de acumulação, mas agora com o número de indivíduos no eixo x. Por favor, joguem com o gráfico seguinte.
+
+```{r}
+library(shiny)
+library(shinythemes)
+# Define UI for application that draws a histogram
+ui <- shinyUI(fluidPage(theme = shinytheme("sandstone"),
+     
+    # Application title
+   titlePanel("Rarefação / indivíduos"),
+   
+   # Sidebar with a slider input for number of bins 
+   fluidRow(style = "padding-bottom: 20px;",
+column(4, sliderInput("k",
+                     "Esforço de amostragem:",
+                     min = 20,
+                     max = 100,
+                     value = 5)),
+        
+ column(4, selectInput("bins", label = "Densidade de indivíduos:",
+                             choices =c( 100, 500, 1000) , 
+                             selected = 100)),
+ #  Show the comparation level
+
+  checkboxInput(inputId = "Comp",
+            label = strong("Mostrar ponto de comparação"),
+            value = FALSE)
+      ),
+      
+      # Show a plot of the generated distribution
+      mainPanel(
+         plotOutput("distPlot")
+      )
+    
+ 
+ 
+  )
+)
+
+# Define server logic required to draw a histogram
+server <- shinyServer(function(input, output) {
+   
+   output$distPlot <- renderPlot({
+      # generate bins based on as.numeric(input$bins) from ui.R
+     library(spatstat)
+     library(raster)
+     library(vegan) 
+     
+     ########## sub-sampling plots in spp ###############
+     ######################################
+     ventana <- function(pp,size){
+       punto<-rpoint(1,win=c((pp$window$xrange)-c(-15,15),
+                             (pp$window$yrange)-c(-15,15)))
+       x<- punto$x
+       y<- punto$y
+       s2<-size/2
+       return(owin(c(x-s2, x+s2), c(y-s2, y+s2)))
+     }
+     ############################################
+     
+     xrange=c(0, 500)
+     yrange=c(0, 500)
+     window<-owin(xrange, yrange)
+     
+     # Build maps from random points ----
+     set.seed(25)
+     elev   <- density(rpoispp(lambda=0.05, win=window)) #
+     elev <- elev*2000
+     set.seed(3)
+     hum <- density(rpoispp(lambda=0.05, win=window))
+     
+     sppE_d <- rpoint(as.numeric(input$bins), elev) 
+     sppH_d <- rpoint(as.numeric(input$bins), hum)
+     
+     sppE_nd <- rpoint(as.numeric(input$bins)*2.5, elev) 
+     sppH_nd <- rpoint(as.numeric(input$bins)*2.5, hum)
+     
+     
+     ##Ensamble of communities----
+     
+     ###Disturbed ----
+     xE_d <- sppE_d$x
+     yE_d <- sppE_d$y
+     NsppE_d <- c(sample(paste("sp", 1:20, sep=""), as.numeric(input$bins)*0.16, replace=T),
+                            sample(paste("sp", 21:30, sep=""), as.numeric(input$bins)*0.84, replace=T), 
+                            sample(paste("sp", 21:30, sep=""),as.numeric(input$bins)-length(c(sample(paste("sp", 1:20, sep=""), as.numeric(input$bins)*0.16, replace=T),
+                            sample(paste("sp", 21:30, sep=""), as.numeric(input$bins)*0.84, replace=T)))))
+
+    NsppE_d[1:30] <- paste("sp", 1:30, sep="")
+    NsppE_d <- as.factor(NsppE_d) 
+    
+      ComE_d <- ppp(x=xE_d,y=yE_d, marks= NsppE_d, 
+                 window=window) 
+    
+     xH_d <- sppH_d$x
+     yH_d <- sppH_d$y
+     NsppH_d <- c(sample(paste("sp", 31:40, sep=""), as.numeric(input$bins)*0.08, replace=T), 
+                            sample(paste("sp", 41:50, sep=""), as.numeric(input$bins)*0.92, replace=T), 
+                            sample(paste("sp", 31:40, sep=""),as.numeric(input$bins)-length(c(sample(paste("sp", 31:40, sep=""),as.numeric(input$bins)*0.08, replace=T), sample(paste("sp", 41:50, sep=""), as.numeric(input$bins)*0.92, replace=T)))))
+     
+     NsppH_d[1:20] <- paste("sp", 31:50, sep="")
+     NsppH_d <- as.factor(NsppH_d)
+     
+     
+     ComH_d <- ppp(x=xH_d,y=yH_d, marks= NsppH_d, 
+                   window=window) 
+     ComEH_d<-superimpose(ComE_d,ComH_d)
+     
+     
+     ###Undisturbed ----
+     xE_nd <- sppE_nd$x
+     yE_nd <- sppE_nd$y
+     NsppE_nd <- c(sample(paste("sp", 1:20, sep=""), (2.5*as.numeric(input$bins))*0.16, replace=T),
+                            sample(paste("sp", 21:30, sep=""), (2.5*as.numeric(input$bins))*0.84, replace=T), 
+                            sample(paste("sp", 21:30, sep=""),2.5*as.numeric(input$bins)-length(c(sample(paste("sp", 1:20, sep=""), (2.5*as.numeric(input$bins))*0.16, replace=T), sample(paste("sp", 21:30, sep=""), (2.5*as.numeric(input$bins))*0.84, replace=T)))))
+
+     NsppE_nd[1:30] <- paste("sp", 1:30, sep="")
+     NsppE_nd <- as.factor(NsppE_nd)     
+     ComE_nd <- ppp(x=xE_nd,y=yE_nd, marks= NsppE_nd, 
+                   window=window) 
+     
+     xH_nd <- sppH_nd$x
+     yH_nd <- sppH_nd$y
+     NsppH_nd <- c(sample(paste("sp", 31:40, sep=""), as.numeric(input$bins)*0.08*2.5, replace=T), 
+                            sample(paste("sp", 41:50, sep=""), as.numeric(input$bins)*0.92*2.5, replace=T), 
+                            sample(paste("sp", 31:40, sep=""),2.5*as.numeric(input$bins)-length(c(sample(paste("sp", 31:40, sep=""),as.numeric(input$bins)*0.08*2.5, replace=T), 
+     sample(paste("sp", 41:50, sep=""), as.numeric(input$bins)*0.92*2.5, replace=T)))))
+     
+     NsppH_nd[1:20] <- paste("sp", 31:50, sep="")
+     NsppH_nd <- as.factor(NsppH_nd)
+       
+       
+     ComH_nd <- ppp(x=xH_nd,y=yH_nd, marks= NsppH_nd, 
+                   window=window) 
+     ComEH_nd<-superimpose(ComE_nd,ComH_nd)
+     
+     ##Hacemos el muestreo de las comunidades----
+     
+      k <- input$k
+      
+      unif.sample_d<- vector(mode = "list", length= k)
+      
+      for (i in 1:k){
+        unif.sample_d[[i]]<-ComEH_d[ventana(ComEH_d, 30)]
+      }
+      
+      unif.sample_nd<- vector(mode = "list", length= k)
+      
+      for (i in 1:k){
+        unif.sample_nd[[i]]<-ComEH_nd[ventana(ComEH_nd, 30)]
+      }
+      
+      ###Calculamos la riqueza----
+      
+      ##Riqueza disturbada
+      richness_d <- matrix(NA,k,specnumber(table(ComEH_d$marks)))
+      colnames(richness_d) <- levels(ComEH_d$marks)
+      
+      for (i in 1:k) {
+        richness_d[i,] <- table(unif.sample_d[[i]]$marks)
+      }
+     
+      
+      ##Riqueza no disturbada
+      
+      richness_nd <- matrix(NA,k,specnumber(table(ComEH_nd$marks)))
+      colnames(richness_nd) <- levels(ComEH_nd$marks)
+      
+      for (i in 1:k) {
+        richness_nd[i,] <- table(unif.sample_nd[[i]]$marks)
+      }
+     
+      
+      
+      ###Graficamos las comunidades -----
+      
+      par(mar=c(3,3,2.5,1), mgp=c(2,0.4,0), tck=-0.02)
+      
+      
+
+N_nd <- colSums(richness_nd) #totalabundance of each species
+N_d <- colSums(richness_d) #totalabundance of each species
+
+#Hacemos un vector con los tamaños de muestra sobre los cuales haremos 
+#la interpolación. El dato final de este vector es el tamaño total de la 
+#muestra (sum(N))
+subs_nd <- seq(1, sum(N_nd)) 
+subs_d <- seq(1, sum(N_d)) 
+#Ejecutamos la rarefacción
+rar_i_nd <- rarefy(N_nd, sample = subs_nd, se = T, MARG = 2)
+rar_i_d <- rarefy(N_d, sample = subs_d, se = T, MARG = 2)
+
+plot(subs_nd, rar_i_nd[1,], type="l", col="blue", 
+     xlim=c(1,sum(N_nd)), ylim = c(0, max(rar_i_nd[1, ])+5), lwd=1.8, xlab="Esforço de amostragem", ylab="Número de Espécies")
+
+segments(subs_nd, rar_i_nd[1, ] + rar_i_nd[2, ], 
+         subs_nd, rar_i_nd[1, ] - rar_i_nd[2, ], col="blue")
+
+lines(subs_d, rar_i_d[1,], type="l", col="red", 
+     lwd=1.8)
+segments(subs_d, rar_i_d[1, ] + rar_i_d[2, ], 
+         subs_d, rar_i_d[1, ] - rar_i_d[2, ], col="red")
+
+if (input$Comp) {
+  abline(v=max(subs_d), col= "red", lty=2, lwd=1.5)
+}
+
+mtext("Rarefacción basada en individuos", side=3, cex=1.2, line =0.5, font =2, adj=0)
+     
+      
+ legend(sum(N_nd)*0.75,max(rar_i_nd[1,])*0.35, c("Pastoreada", "Intocada"), lty=1, lwd = 1.2, col =c("darkred", "darkblue") )
+
+      # draw the histogram with the specified number of bins
+       }, height = 300, width = 500)
+})
+
+# Run the application 
+shinyApp(ui = ui, server = server, options = list(height = 600))
+
+```
+
+Respondam agora, a perturbação altera a riqueza dessas comunidades?
+
+A perturbação altera a densidade, mas não altera a riqueza nessas comunidades.
+
+
+#Exercício: _Riqueza de aves_
+
+Uma vez que temos esclarecido quais são os possíveis efeitos do esforço amostral e da densidade sobre as estimações de riqueza de espécies, vamos aplicar isso no mundo real.
+	Vamos utilizar dados de aves de uma floresta estacionalmente seca e vamos fazer a comparação da riqueza de espécies entre duas estações. O que queremos é saber se existem mudanças na riqueza da comunidade de aves entre a estação seca e a chuvosa.
+	Os dados correspondem a nove meses de amostragem de aves. Quatro meses correspondem à estação chuvosa e cinco meses à estação seca. Foi feita a amostragem de três localidades diferentes, cada localidade com três redes de nevoeiro. Vamos começar com os gráficos exploratórios que permitem observar o modo em que a riqueza de espécies e a abundância variam mensalmente durante a amostragem. Para ver como a abundância varia selecione "_Mostrar Abundância_"
+
+
+```{r, message=FALSE,warning=FALSE, eval=TRUE}
+
+library(shiny)
+library(shinythemes)
+inputPanel(
+
+  checkboxInput(inputId = "Abundancia",
+            label = strong("Mostrar Abundância"),
+            value = FALSE)
+)
+library(vegan)
+library(RCurl)
+
+birds <-read.csv("Aves_temporal2.csv", header=T, sep=";", skip = 0)
+
+renderPlot({
+
+  par(mar=c(3,3,1,3), mgp=c(1.5, 0.5,0), tck=-0.01)
+   barplot(specnumber(birds[,3:ncol(birds)]), col=as.numeric(birds$Season)+rep(c(95,649, 95), c(3,12,12)), border="white", xlab="Amostras / Meses", ylab="Riqueza")
+  
+if (input$Abundancia) {
+  par(new=T)
+plot(rowSums(birds[,3:ncol(birds)]), col="black", type="b", ylim=c(0,75), pch=19, axes=F, xlab="", ylab="")
+  axis(4,at = seq(0,80,10))
+mtext("Número de indíviduos", 4, line=1.5)
+}  
+  
+}, height = 300, width = 500)
+```
+
+O gráfico prévio mostra a riqueza e a abundância de aves nas estações seca (cinco
+meses) e chuvosa (quatro meses). As barras cinza correspondem à estação seca, enquanto que as barras verdes correspondem à estação 
+
+O que pensam a esse respeito? A riqueza de espécies está relacionada com a abundância de indivíduos?
+
+O nosso primeiro passo é medir a eficiência da amostragem. Precisamos saber se a riqueza atinge a assíntota da curva. Se em cada estação é atingida a assíntota, podemos comparar a riqueza destas duas estaciones. Se não é atingida a assíntota, então devemos utilizar uma rarefação para fazer a comparação
+
+Vamos utilizar a função “_rarefy_” para fazer o cálculo da riqueza de espécies esperada em subamostras aleatórias do tamanho de amostra da comunidade. Essa função é implementada no ambiente de programação R Project. As subamostras deviam ser mais pequenas do que o tamanho total da comunidade. A função “_rarefy_” está baseada na formulação de Hurlbert’s (1971) e o erro padrão em Heck et al. (1975).
+
+Usaremos la función “_rarefy_” para calcular la riqueza de especies esperada en submuestras aleatorias del tamaño de muestra de la comunidad. Esta función es implementada en el entorno de programación R Project. Las submuestras deberían ser más pequeñas que el tamaño total de la comunidad. La función _rarefy_ está basada en la formulación de Hurlbert’s (1971) y el error estándar en Heck et al. (1975). Selecione "_Mostrar rarefação baseada em amostra_" para observar a curva de rarefação baseada em amostras e "_Mostrar rarefação com base em indivíduos_" para observar a curva com base nos indivíduos. Lembre-se que a comparação é feita apenas sob as mesmas condições de número de amostras ou número de indivíduos, onde é marcado com a linha vermelha.
+
+
+```{r, message=FALSE, warning=FALSE,eval=TRUE}
+inputPanel(
+
+  checkboxInput(inputId = "Muestras",
+            label = strong("Mostrar rarefacción basada en muestras"),
+            value = FALSE),
+  checkboxInput(inputId = "Individuos",
+            label = strong("Mostrar rarefacción basada en individuos"),
+            value = FALSE)
+  
+)
+
+library(vegan)
+require(RCurl)
+
+birds <-read.csv(text=getURL("https://raw.githubusercontent.com/Ciespinosa/datos_practicas/master/Aves_temporal2.csv"), header=T, sep=";", skip = 0)
+
+dryS <- specaccum(birds[birds$Season=="dry",3:ncol(birds)], method = "random", permutations=100)
+rainyS <- specaccum(birds[birds$Season!="dry",3:ncol(birds)], method = "random", permutations=100)
+
+ND <- colSums(birds[birds$Season=="dry",3:ncol(birds)])
+subsD <- seq(1:sum(ND))
+
+NR <- colSums(birds[birds$Season!="dry",3:ncol(birds)])
+subsR <- seq(1:sum(NR))
+  
+dryI <- rarefy(ND, subsD, se = T, MARG = 2)
+rainyI <- rarefy(NR, subsR, se = T, MARG = 2)
+
+renderPlot({
+    par(mfcol=c(1,2),mar=c(3,3,1,3), mgp=c(1.5, 0.5,0), tck=-0.01)
+  
+  if (input$Muestras) {
+    plot(rainyS$sites, rainyS$richness, col=651, xlab="Muestras/Mes", ylab="Riqueza", pch=19, xlim = c(1,15))
+  lines(rainyS$sites, rainyS$richness, col=651, xlab="Muestras/Mes", ylab="Riqueza")
+  segments(rainyS$sites, rainyS$richness+rainyS$sd, rainyS$sites, rainyS$richness-rainyS$sd, col=651)  
+  
+  points(dryS$sites, dryS$richness, col=96, xlab="Muestras/Mes", ylab="Riqueza", pch=19)
+  lines(dryS$sites, dryS$richness, col=96, xlab="Muestras/Mes", ylab="Riqueza")
+  segments(dryS$sites, dryS$richness+dryS$sd, dryS$sites, dryS$richness-dryS$sd, col=96)  
+  abline(v=max(rainyS$sites), col="red", lty=2, lwd=1.5)
+    }
+  
+if (input$Individuos) {
+  
+    plot(subsR, rainyI[1,], col=651, xlab="Individuos", ylab="Riqueza", type="l")
+    segments(subsR, rainyI[1,]+rainyI[2,],subsR, rainyI[1,]-rainyI[2,], col=651)  
+  
+  lines(subsD, dryI[1,], col=96, xlab="Individuos", ylab="Riqueza", type="l")
+    segments(subsD, dryI[1,]+dryI[2,],subsD, dryI[1,]-dryI[2,], col=96)
+    abline(v=max(subsD), col="red", lty=2, lwd=1.5)}  
+  
+}, height = 300, width = 600)
+```
+
+No gráfico seguinte podem ser observadas as diferências em riqueza de espécies entre estações; a. Riqueza com rarefação e b. Riqueza de espécies.
+
+```{r,eval=TRUE}
+inputPanel(
+)
+renderPlot({
+rich <- specnumber(birds[,3:ncol(birds)])
+
+rarSamp <- rarefy(birds[3:nrow(birds)-2,3:ncol(birds)], min(rowSums(birds[3:nrow(birds)-2,3:ncol(birds)])))
+
+rarSamp1 <- c(rarSamp,rich[26:27])
+
+par(mfcol=c(1,2))
+boxplot(rarSamp1~birds$Season, col="grey90")
+stripchart(rarSamp1~birds$Season, method = "jitter", jitter = 0.1, add =
+TRUE, vertical = TRUE, pch=19, col=c(rgb(0,1,0,0.7), rgb(0,0,0,0.8)))
+mtext("a. Riqueza de rarefação por estação", font=2, adj=0)
+
+boxplot(rich~birds$Season, col="grey90")
+stripchart(rich~birds$Season, method = "jitter", jitter = 0.1, add =
+TRUE, vertical = TRUE, pch=19, col=c(rgb(0,1,0,0.7), rgb(0,0,0,0.8)))
+mtext("b. Riqueza por estação", font=2, adj=0)
+}, height = 300, width = 600)
+```
+
+Em conformidade com os resultados obtidos, por favor respondam as perguntas seguintes.
+
+> a. Pode a riqueza de espécies ser alterada pela abundância de indivíduos incluídos na amostragem?
+> b. É possível fazer a comparação entre a riqueza destas duas comunidades? Explique a sua resposta.
+> c. Podem explicar as consequências da rarefação nas medidas de riqueza?
+> d. A sazonalidade altera a riqueza de aves ou a densidade de espécies?
