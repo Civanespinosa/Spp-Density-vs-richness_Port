@@ -5,8 +5,8 @@ account: ecologiacivan
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 430830
-bundleId: 1577347
+bundleId: 1580279
 url: https://ecologiacivan.shinyapps.io/riquezaportver/
-when: 1536526579.01838
+when: 1536672916.19556
 asMultiple: FALSE
 asStatic: FALSE
