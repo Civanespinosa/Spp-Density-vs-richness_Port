@@ -15,19 +15,19 @@ runtime: shiny
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-#Overview 
+# Overview 
 
 Species richness is the number of species present in a spatially and temporally demarcated location. Many authors consider that richness is the easiest and clearest way to measure species diversity (Sarkar, 2002; Magurran, 2004). However, measuring richness in a precise way it is not a simple work (Magurran, 2004), mostly because the number of species observed changes with the sample effort. Thus, the comparison of the richness between two communities is best with complete inventories, but to do complete inventories is unpractical and complex (Gonzalez-Oreja et al. 2010). In the present exercise, we study differences between species density and total richness between two sites, and evaluate the importance of sampling in studies of species richness.
 This exercise is divided in two parts; the first part is a demo that will allow us to understand the impact of sampling on the calculation of richness (the relation species-area or species-number of individuals). In the second part, we will develop a practical exercise in which we evaluate the effect of season on the richness of birds in a tropical dry forest.
 
-#Demo: Measuring richness. 
+# Demo: Measuring richness. 
 
 Apparently measuring species richness is a simple work, we only need to count the number of species in our study zone. Unfortunately, it is not so simple, the richness can be affected by the sampling effort and the number of individuals, these factors can generate biases in our richness measures.
 
 In the present demo you will identify factors that affect species richness and how scientists have solved (at least partially) the problem to compare richness between communities. You can visually analyze the effects of these variables and understand tools used to correct the richness measure.
 
 
-##First step: _the communities_
+## First step: _the communities_
 
 We will simulate two different communities, the first one is a pristine community and the second one is a community impacted by grazing. Once the communities are generated, we will compare the species richness of both communities.  As ecologists, we are interested in evaluating if grazing affects species richness of this ecosystem.
 
@@ -194,7 +194,7 @@ shinyApp(ui = ui, server = server, options = list(height = 700))
 
 ```
 
-##Richness: _sampling effort and density_
+## Richness: _sampling effort and density_
 
 Now that we have our communities, we need to sample them and measure their species richness. In the next plot, you can change the sampling effort and the density of individuals in the community. You can play with these two parameters and look the richness obtained with each change. What is your conclusion about the effect of grazing disturbance on the richness of this ecosystem?.
 
@@ -833,7 +833,7 @@ Now, What is your response to the question, does disturbance affects richness of
 
 Disturbance affects density but not richness in this community.
 
-#Exercise: Bird richness
+# Exercise: Bird richness
 
 Once we have clarified the possible effects of sampling effort and density on species richness estimations, we will apply it in the real world.
 

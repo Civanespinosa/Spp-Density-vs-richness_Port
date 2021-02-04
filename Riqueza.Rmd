@@ -1,31 +1,43 @@
 ---
 title: 'Diversidade alfa: Densidade de espécies versus riqueza total'
-author: "Carlos Ivan Espinosa"
-date: "octubre de 2017"
+author:
+- name: "Carlos Iván Espinosa"
+  affiliation:
+    - Laboratorio de ecología y servicios ecosistémicos, Universidad Técnica Particular de Loja.
+  email: ciespinosa@utpl.edu.ec
+date: "9 de julio de 2020"
 output:
-    html_notebook:
+  html_document:
     fig_caption: yes
+    highlight: haddock
     number_sections: yes
+    theme: united
     toc: yes
+    toc_float:
+      smooth_scroll: no
 runtime: shiny
   
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_chunk$set(echo = FALSE)
 ```
 
-#Generalidades
+Para regresar a Ejercicios Interactivos [![button](push1.png)](https://ciespinosa.github.io/Interactivos.html)
 
-A riqueza de espécies é o número de espécies presente numa localidade demarcada em um espaço e tempos determinados. Muitos autores acham que a riqueza é a forma mais fácil e clara para medir a diversidade (Sarkar, 2002; Magurran, 2004). No entanto, a medição da riqueza de uma forma precisa não é um trabalho simples (Magurran, 2004), principalmente porque o número de espécies observadas muda com o esforço amostral, ou seja, quanto maior seja o número de amostras utilizadas, maior será a probabilidade de encontrar mais espécies. De modo que a comparação da riqueza entre duas comunidades é melhor com inventários completos; no entanto, fazer inventários completos é pouco prático e muitas vezes complicado (Gonzalez-Oreja et al. 2010). No presente exercício estudaremos as diferenças entre densidade de espécies e riqueza total entre dois sítios e avaliaremos a importância da amostragem em estudos de riqueza de espécies.
+--------
 
-	O exercício está dividido em duas partes; a primeira parte é uma demo que permitirá entender o impacto da amostragem sobre o cálculo da riqueza (a relação espécies – área, ou espécies - número de indivíduos). Na segunda parte, desenvolveremos um exercício prático no qual avaliaremos o efeito da estação sobre a riqueza de aves numa floresta tropical seca.
+# Generalidades
 
-#Demo: Medición de riqueza
+La riqueza de especies es el número de especies presente en una localidad demarcada espacial y temporalmente. Muchos autores consideran que la riqueza es la forma más fácil y clara para medir diversidad (Sarkar, 2002; Magurran, 2004). Sin embargo, la medición de riqueza en una forma precisa no es un trabajo simple (Magurran, 2004), principalmente debido al número de especies observadas cambia con el esfuerzo de muestreo, es decir, mientras mayor sea el número de muestras que usamos, mayor probabilidad de encontrar más especies. De manera que la comparación de la riqueza entre dos comunidades es mejor con inventarios completos, sin embargo, hacer inventarios completos es poco práctico y muchas veces complejo (Gonzalez-Oreja et al. 2010). En el presente ejercicio estudiaremos las diferencias entre densidad de especies y riqueza total entre dos sitios y evaluaremos la importancia del muestreo en estudios de riqueza de especies. 
+
+El ejercicio está dividido en dos partes; la primera parte es un demo que nos permitirá entender el impacto del muestreo sobre el cálculo de la riqueza (la relación especies – área o especies – número de individuos). En la segunda parte, desarrollaremos un ejercicio práctico en el cual evaluamos el efecto de la estación sobre la riqueza de aves en un bosque seco tropical.
+
+# Demo: Medición de riqueza
 
 Aparentemente la medición de riqueza de especies es un trabajo simple, únicamente necesitamos contar el número de especies en nuestra zona de estudio. Desafortunadamente, esto no es tan simple, la riqueza puede ser afectada por el esfuerzo de muestreo y el número de individuos; estos dos factores pueden generar sesgos en nuestras medidas de riqueza
 
-##Primer paso: _las comunidades_
+## Primer paso: _las comunidades_
 
 A continuación, vamos a generar unos datos que simulen dos comunidades diferentes, la primera será una comunidad prístina y la segunda una comunidad impactada por el pastoreo. La comunidad prístina tendrá siempre una densidad de individuos mayor que la comunidad perturbada. Una vez que las comunidades son generadas, comparamos la riqueza de especies de ambas comunidades. Como ecologistas, nos interesa evaluar si el pastoreo afecta la riqueza de especies de este ecosistema. 
 Las comunidades serán construidas en base a dos variables; elevación y humedad. Generamos una superficie de elevación y otra de humedad, sobre las cuales unas  especies de plantas estarán distribuidas con una relación positiva con respecto a la elevación y en otras especies con respecto a la humedad. Estas relaciones serán iguales entre comunidades. 
@@ -192,7 +204,7 @@ shinyApp(ui = ui, server = server, options = list(height = 700))
 
 ```
 
-##Riqueza:  _esfuerzo de muestreo y densidad_
+## Riqueza:  _esfuerzo de muestreo y densidad_
 
 Ahora que tenemos nuestras comunidades, necesitamos muestrearlas y medir la riqueza de especies. En la siguiente gráfica, ustedes pueden cambiar el esfuerzo de muestreo y la densidad de individuos en la comunidad. En la gráfica cada muestra está representada por un cuadrado negro. Como pueden ver, el esfuerzo de muestreo más bajo en el ejemplo es dos, por lo que en cada comunidad aparecen dos parcelas (cuadrados negros).
 
@@ -447,9 +459,9 @@ ui <- shinyUI(fluidPage(theme = shinytheme("sandstone"),
    fluidRow(style = "padding-bottom: 20px;",
 column(4, sliderInput("k",
                      "Esfuerzo de muestreo:",
-                     min = 5,
+                     min = 10,
                      max = 100,
-                     value = 5)),
+                     value = 10)),
          column(4, selectInput("bins", label = "Densidad de individuos:",
                              choices =c( 50, 100, 500, 1000) , 
                              selected = 50))
@@ -864,7 +876,7 @@ Ahora respondan, ¿la perturbación afecta a la riqueza de estas comunidades?
 
 La perturbación afecta a la densidad, pero no a la riqueza en estas comunidades.
 
-#Ejercicio: _Riqueza de aves_
+# Ejercicio: _Riqueza de aves_
 
 Una vez que hemos clarificado los posibles efectos del esfuerzo de muestreo y la densidad sobre las estimaciones de riqueza de especies, vamos a aplicarlo en el mundo real. 
 
@@ -927,7 +939,7 @@ inputPanel(
 library(vegan)
 require(RCurl)
 
-birds <-read.csv(text=getURL("https://raw.githubusercontent.com/Ciespinosa/datos_practicas/master/Aves_temporal2.csv"), header=T, sep=";", skip = 0)
+birds <-read.csv("https://raw.githubusercontent.com/Ciespinosa/datos_practicas/master/Aves_temporal2.csv", header=T, sep=";", skip = 0)
 
 dryS <- specaccum(birds[birds$Season=="dry",3:ncol(birds)], method = "random", permutations=100)
 rainyS <- specaccum(birds[birds$Season!="dry",3:ncol(birds)], method = "random", permutations=100)

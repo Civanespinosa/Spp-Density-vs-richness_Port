@@ -5,8 +5,8 @@ account: ecologiacivan
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 230933
-bundleId: 1055018
+bundleId: 3619893
 url: https://ecologiacivan.shinyapps.io/Riqueza/
-when: 1509551343.92952
+when: 1599850653.91738
 asMultiple: FALSE
 asStatic: FALSE

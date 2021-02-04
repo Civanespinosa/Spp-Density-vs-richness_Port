@@ -907,17 +907,17 @@ Vamos utilizar a função “_rarefy_” para fazer o cálculo da riqueza de esp
 ```{r, message=FALSE, warning=FALSE,eval=TRUE}
 inputPanel(
 
-  checkboxInput(inputId = "Amostras",
+  checkboxInput(inputId = "Muestras",
             label = strong("Mostrar rarefação com base em amostras"),
             value = FALSE),
-  checkboxInput(inputId = "Indivíduos",
+  checkboxInput(inputId = "Individuos",
             label = strong("Mostrar rarefação com base em indivíduos"),
             value = FALSE)
   
 )
 
 library(vegan)
-require(RCurl)
+library(RCurl)
 
 birds <-read.csv(text=getURL("https://raw.githubusercontent.com/Ciespinosa/datos_practicas/master/Aves_temporal2.csv"), header=T, sep=";", skip = 0)
 
@@ -974,12 +974,12 @@ rarSamp1 <- c(rarSamp,rich[26:27])
 par(mfcol=c(1,2))
 boxplot(rarSamp1~birds$Season, col="grey90")
 stripchart(rarSamp1~birds$Season, method = "jitter", jitter = 0.1, add =
-TRUE, vertical = TRUE, pch=19, col=c(rgb(0,1,0,0.7), rgb(0,0,0,0.8)))
+TRUE, vertical = TRUE, pch=19, col=c(rgb(0,0,0,0.7), rgb(0,1,0,0.8)))
 mtext("a. Riqueza de rarefação por estação", font=2, adj=0)
 
 boxplot(rich~birds$Season, col="grey90")
 stripchart(rich~birds$Season, method = "jitter", jitter = 0.1, add =
-TRUE, vertical = TRUE, pch=19, col=c(rgb(0,1,0,0.7), rgb(0,0,0,0.8)))
+TRUE, vertical = TRUE, pch=19, col=c(rgb(0,0,0,0.7), rgb(0,1,0,0.8)))
 mtext("b. Riqueza por estação", font=2, adj=0)
 }, height = 300, width = 600)
 ```
